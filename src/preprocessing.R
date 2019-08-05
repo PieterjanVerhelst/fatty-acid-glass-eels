@@ -12,20 +12,18 @@ rm(list = ls())
 
 
 # Read in data
-data <- read.csv("./data/raw/glass_eel_metadata.csv",sep=";",stringsAsFactors = FALSE)
+data <- read.csv("./data/raw/glass_eel_metadata.csv",sep=",",stringsAsFactors = FALSE)
 
-# Change column name
-colnames(data)[1] <- "sample_code"
 
 # Set columns in correct format
 summary(data)
 
 data$Date <- dmy(data$Date)
 data$Location <- factor(data$Location)
-data$Location_type <- factor(data$Location_type)
+data$Fishing_method <- factor(data$Fishing_method)
 data$Pigmentation <- factor(data$Pigmentation)
 data$Pigmentation_group <- factor(data$Pigmentation_group)
-data$Condition_factor<-gsub(",", ".", data$Condition_factor)
+#data$Condition_factor<-gsub(",", ".", data$Condition_factor)
 data$Condition_factor <- as.numeric(data$Condition_factor)
 data$Length <- as.numeric(data$Length)
 data$Weight <- as.numeric(data$Weight)
@@ -38,16 +36,16 @@ data$MY <- factor(data$MY)
 data$Year <- factor(data$Year)
 data$Month <- factor(data$Month)
 
-# Remove "potloodjes"
+# Remove elvers
 unique(data$Pigmentation)
-data <- subset(data, Pigmentation != "potlood")
+data <- subset(data, Pigmentation != "elver")
 
 
 # Remove substrates in Ganzepoot and IJzer en sleepnetdata
 data$Location <- factor(data$Location)
 data <- subset(data, Location != "IJZ_SU")
 data <- subset(data, Location != "GA_SU")
-data <- subset(data, Location_type != "SN")
+data <- subset(data, Fishing_method != "SN")
 
 # Remove NA
 data <- na.omit(data)
