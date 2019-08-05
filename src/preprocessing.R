@@ -12,7 +12,7 @@ rm(list = ls())
 
 
 # Read in data
-data <- read.csv("./data_update.csv",sep=";",stringsAsFactors = FALSE)
+data <- read.csv("./glass_eel_metadata.csv",sep=";",stringsAsFactors = FALSE)
 
 # Set columns in correct format
 summary(data)
