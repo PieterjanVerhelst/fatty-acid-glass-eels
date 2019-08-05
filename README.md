@@ -8,4 +8,5 @@ Fatty acid analysis on glass eels caught at the Veurne-Ambacht Canal in Nieuwpoo
 
 * `/src:`
 
-1. `Preprocessing.R`: Format and process the glass eel metadata
+1. `preprocessing.R`: Format and process the glass eel metadata
+2. `upload_fa.R`:Upload fatty acid dataset and merge with glass eel metadata
