@@ -14,6 +14,9 @@ rm(list = ls())
 # Read in data
 data <- read.csv("./data/raw/glass_eel_metadata.csv",sep=";",stringsAsFactors = FALSE)
 
+# Change column name
+colnames(data)[1] <- "sample_code"
+
 # Set columns in correct format
 summary(data)
 
