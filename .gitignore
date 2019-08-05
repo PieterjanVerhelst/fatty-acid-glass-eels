@@ -37,8 +37,11 @@ pgpass
 additionals/
 .Rproj.user
 
-# ignore big data file
-dfk.csv
-environmental_data.csv
+# ignore README file
+README.md
+
+# ignore data file
+glass_eel_metadata.csv
+
 
 
