@@ -37,9 +37,6 @@ pgpass
 additionals/
 .Rproj.user
 
-# ignore README file
-README.md
-
 # ignore data file
 glass_eel_metadata.csv
 
