@@ -36,6 +36,9 @@ data$MY <- factor(data$MY)
 data$Year <- factor(data$Year)
 data$Month <- factor(data$Month)
 
+# Create numerical time column
+data$cdate <- as.numeric(data$Date)
+
 # Remove elvers
 unique(data$Pigmentation)
 data <- subset(data, Pigmentation != "elver")
