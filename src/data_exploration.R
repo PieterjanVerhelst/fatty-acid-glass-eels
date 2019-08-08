@@ -8,7 +8,7 @@ library(DataExplorer)
 library(ggplot2)
 library(ggpubr)
 library(ggloop)
-
+library(vegan)
 
 
 
@@ -132,6 +132,55 @@ g <- ggloop(su_pg, aes_loop(x = Date, y = X14.0:X22.6n.3)) %L+%
 pdf("./Figures/pumpingstation.pdf")
 g 
 dev.off()
+
+
+
+
+# 2. MDS ####
+
+fa_data2 <- read.csv("./data/raw/FA_rel.csv",stringsAsFactors = FALSE)
+fa_data2 <- fa_data2[,-1]
+
+
+
+NMDS <- metaMDS(fa_data2,k=2,trymax=100)
+
+stressplot(NMDS)
+plot(NMDS, type = "text")
+ordiplot(NMDS,type="n")
+orditorp(NMDS,display="species",col="red",air=0.01)
+orditorp(NMDS,display="sites",cex=0.75,air=0.01)
+
+
+
+
+#treat <- c(rep("Treatment1",12),rep("Treatment2",12))
+
+pg <- c(1:6,12:22, 33:42, 64:72, 88:97,117:126,147:156,176:185,196:205,216:220,232:245,256:265)
+su <- c(23:27, 48:55,57,73:82,102:111,132:141,157,158,160,161,167:171,186:192,194,195,206:215,221:227,229,230,246:255, 267:269,271:276)
+kn <- c(7:11,28:32,58:62,83:87,112:116,142:146,172:175)
+
+#ordihull(groups=treat,draw="polygon",col="grey90",label=F)
+ordiplot(NMDS,type="n")
+orditorp(NMDS,display="species",col="red",air=0.01)
+orditorp(NMDS,display="sites",col=c(
+  rep("green",pg),
+  rep("blue",su),
+  rep("yellow", kn)), 
+  air=0.01,cex=0.75)
+
+
+
+
+
+
+
+
+# 3. Cluster analyse ####
+
+soren <- vegdist(fa_data2, "bray")
+tree.soren <- hclust(soren, "average") 
+plot(tree.soren, hang = -1)
 
 
 
