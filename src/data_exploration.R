@@ -307,7 +307,7 @@ orditorp(NMDS,display="sites",col=c(rep("red", 2),     # pg = red, su = blue, kn
 
 
 
-# 3. Cluster analyse ####
+# 3. Cluster analysis ####
 
 soren <- vegdist(fa_data2, "bray")
 tree.soren <- hclust(soren, "average") 
