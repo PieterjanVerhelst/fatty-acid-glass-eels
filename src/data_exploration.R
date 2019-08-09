@@ -185,3 +185,106 @@ plot(tree.soren, hang = -1)
 
 
 
+
+# 4. PCA ####
+library(devtools)
+install.packages("remotes")
+remotes::install_github("vqv/ggbiplot")
+library(ggbiplot)
+
+
+# Create PCA
+fa_pca <- prcomp(fa_data[,c(2:25)], center = TRUE,scale. = TRUE)
+summary(fa_pca)
+str(fa_pca)
+
+# Plot PcA
+ggbiplot(fa_pca)
+
+# Create grouping variable
+fa_pca_method <- c(rep("pg", 2), 
+                   rep("kn",2), 
+                   "su",
+                   rep("kn",3), 
+                   "pg", 
+                   rep("su", 2),
+                   "pg",
+                   "su",
+                   "pg",
+                   rep("su", 2),
+                   rep("pg", 2),
+                   "kn",
+                   rep("pg", 2),
+                   "su",
+                   "pg",
+                   "su",
+                   "pg",
+                   "su",
+                   "pg",
+                   "su",
+                   "pg",
+                   rep("su", 9),
+                   "pg",
+                   rep("su", 5),
+                   rep("kn",2),
+                   "pg",
+                   rep("su", 3),
+                   "kn",
+                   rep("su", 5),
+                   rep("pg", 2),
+                   "su",
+                   rep("pg", 2),
+                   rep("su", 12),
+                   rep("pg", 2),
+                   rep("su", 3),
+                   rep("pg", 2),
+                   rep("su", 10),
+                   rep("pg", 2),
+                   rep("su", 2),
+                   "kn",
+                   rep("pg", 2),
+                   rep("su", 16),
+                   "pg",
+                   rep("su", 2),
+                   "pg",
+                   rep("su", 3),
+                   rep("pg", 4),
+                   "su",
+                   rep("pg", 2),
+                   rep("su", 5),
+                   rep("pg", 5),
+                   rep("kn", 5),
+                   rep("pg", 11),
+                   "su",
+                   rep("kn", 5),
+                   rep("pg", 10),
+                   rep("kn", 5),
+                   rep("pg", 6),
+                   rep("su", 2),
+                   rep("kn", 4),
+                   rep("pg", 3),
+                   rep("su", 2),
+                   "kn",
+                   rep("pg", 7),
+                   rep("su", 6),
+                   rep("kn", 3),
+                   rep("pg", 8),
+                   "su",
+                   "kn",
+                   rep("pg", 7),
+                   rep("su", 3),
+                   rep("pg", 5),
+                   "su",
+                   rep("pg", 3),
+                   rep("su", 2),
+                   rep("pg", 17))
+
+# Add ellipses according to group
+ggbiplot(fa_pca, ellipse=TRUE, groups=fa_pca_method)
+
+# Look at different axes
+ggbiplot(fa_pca, ellipse=TRUE, choices=c(3,4) , groups=fa_pca_method)
+
+
+
+
