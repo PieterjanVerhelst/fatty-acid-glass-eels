@@ -223,6 +223,8 @@ fa_pca_method <- c(rep("pg", 2),
                    rep("pg", 3),
                    rep("su", 2),
                    rep("pg", 17))
+
+
 ordiplot(NMDS,type="n")
 ordihull(NMDS, groups=fa_pca_method,draw="polygon",col="grey90",label=F)
 orditorp(NMDS,display="species",col="black",air=0.01)
@@ -303,6 +305,62 @@ orditorp(NMDS,display="sites",col=c(rep("red", 2),     # pg = red, su = blue, kn
            rep("blue", 2),
            rep("red", 17)),
          air=0.01,cex=0.75)
+
+
+
+# NMDS after 15th of May only for substrates and eel ladder
+
+subset <- filter(fa_data, Fishing_method == "Palinggoot" |
+                          Fishing_method == "Substraat")
+subset <- filter(subset, cdate > 17296)
+
+
+NMDS2 <- metaMDS(subset[,c(2:25)],k=2,trymax=50)
+
+stressplot(NMDS2)
+plot(NMDS2, type = "text")
+ordiplot(NMDS2,type="n")
+orditorp(NMDS2,display="species",col="red",air=0.01)
+orditorp(NMDS2,display="sites",cex=0.75,air=0.01)
+
+
+fa_pca_method <- c("pg",
+                   rep("su", 2),
+                   rep("pg", 3),
+                   "su",
+                   "pg",
+                   "su",
+                   rep("pg", 2),
+                   rep("su", 7),
+                   rep("pg", 2),
+                   rep("su", 18),
+                   rep("pg", 2),
+                   rep("su", 2),
+                   rep("pg", 3),
+                   rep("su", 2),
+                   rep("pg", 17))
+
+
+ordiplot(NMDS2,type="n")
+ordihull(NMDS2, groups=fa_pca_method,draw="polygon",col="grey90",label=F)
+orditorp(NMDS2,display="species",col="black",air=0.01)
+orditorp(NMDS2,display="sites",col=c("red",              # pg = red, su = blue
+                                     rep("blue", 2),
+                                     rep("red", 3),
+                                     "blue",
+                                     "red",
+                                     "blue",
+                                     rep("red", 2),
+                                     rep("blue", 7),
+                                     rep("red", 2),
+                                     rep("blue", 18),
+                                     rep("red", 2),
+                                     rep("blue", 2),
+                                     rep("red", 3),
+                                     rep("blue", 2),
+                                     rep("red", 17)),
+         air=0.01,cex=0.75)
+
 
 
 
