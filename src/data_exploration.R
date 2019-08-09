@@ -138,6 +138,7 @@ dev.off()
 
 # 2. NMDS ####
 
+# 2.1. Total ####
 NMDS <- metaMDS(fa_data[,c(2:25)],k=3,trymax=100)
 
 stressplot(NMDS)
@@ -308,7 +309,7 @@ orditorp(NMDS,display="sites",col=c(rep("red", 2),     # pg = red, su = blue, kn
 
 
 
-# NMDS after 15th of May only for substrates and eel ladder
+# 2.1. NMDS after 15th of May only for substrates and eel ladder ####
 
 subset <- filter(fa_data, Fishing_method == "Palinggoot" |
                           Fishing_method == "Substraat")
@@ -324,7 +325,7 @@ orditorp(NMDS2,display="species",col="red",air=0.01)
 orditorp(NMDS2,display="sites",cex=0.75,air=0.01)
 
 
-fa_pca_method <- c("pg",
+fa_pca_method2 <- c("pg",
                    rep("su", 2),
                    rep("pg", 3),
                    "su",
@@ -342,7 +343,7 @@ fa_pca_method <- c("pg",
 
 
 ordiplot(NMDS2,type="n")
-ordihull(NMDS2, groups=fa_pca_method,draw="polygon",col="grey90",label=F)
+ordihull(NMDS2, groups=fa_pca_method2,draw="polygon",col="grey90",label=F)
 orditorp(NMDS2,display="species",col="black",air=0.01)
 orditorp(NMDS2,display="sites",col=c("red",              # pg = red, su = blue
                                      rep("blue", 2),
@@ -360,6 +361,192 @@ orditorp(NMDS2,display="sites",col=c("red",              # pg = red, su = blue
                                      rep("blue", 2),
                                      rep("red", 17)),
          air=0.01,cex=0.75)
+
+
+# 2.2. NMDS per month ####
+
+subset <- filter(fa_data, Fishing_method == "Palinggoot" |
+                   Fishing_method == "Substraat")
+
+# 2.2.1 March ####
+march <- filter(subset, Month == "3")
+
+
+NMDS_march <- metaMDS(march[,c(2:25)],k=2,trymax=50)
+
+stressplot(NMDS_march)
+plot(NMDS_march, type = "text")
+ordiplot(NMDS_march,type="n")
+orditorp(NMDS_march,display="species",col="red",air=0.01)
+orditorp(NMDS_march,display="sites",cex=0.75,air=0.01)
+
+
+fa_pca_method_march <- c(rep("su", 2),
+                    "pg",
+                    rep("su", 3),
+                    rep("pg", 2),
+                    rep("su", 10),
+                    "pg",
+                    rep("su", 6),
+                    rep("pg", 16),
+                    "su",
+                    rep("pg", 16),
+                    rep("su",2))
+
+
+ordiplot(NMDS_march,type="n")
+ordihull(NMDS_march, groups=fa_pca_method_march,draw="polygon",col="grey90",label=F)
+orditorp(NMDS_march,display="species",col="black",air=0.01)
+orditorp(NMDS_march,display="sites",col=c(rep("blue", 2),    # pg = red, su = blue
+                                            "red",
+                                            rep("blue", 3),
+                                            rep("red", 2),
+                                            rep("blue", 10),
+                                            "red",
+                                            rep("blue", 6),
+                                            rep("red", 16),
+                                            "blue",
+                                            rep("red", 16),
+                                            rep("blue",2)),
+         air=0.01,cex=0.75)
+
+
+
+# 2.2.2 April ####
+april <- filter(subset, Month == "4")
+
+
+NMDS_april <- metaMDS(april[,c(2:25)],k=2,trymax=50)
+
+stressplot(NMDS_april)
+plot(NMDS_april, type = "text")
+ordiplot(NMDS_april,type="n")
+orditorp(NMDS_april,display="species",col="red",air=0.01)
+orditorp(NMDS_april,display="sites",cex=0.75,air=0.01)
+
+
+fa_pca_method_april <- c(rep("pg", 2),
+                         "su",
+                         "pg",
+                         rep("su", 2),
+                         rep("pg", 2),
+                         rep("su", 1),
+                         "pg",
+                         rep("su", 7),
+                         "pg",
+                         rep("su", 5),
+                         "pg",
+                         rep("su", 10),
+                         rep("pg",10),
+                         rep("su", 2),
+                         rep("pg", 7),
+                         rep("su", 6),
+                         rep("pg", 8),
+                         "su",
+                         rep("pg", 7),
+                         rep("su", 3))
+
+
+ordiplot(NMDS_april,type="n")
+ordihull(NMDS_april, groups=fa_pca_method_april,draw="polygon",col="grey90",label=F)
+orditorp(NMDS_april,display="species",col="black",air=0.01)
+orditorp(NMDS_april,display="sites",col=c(rep("red", 2),      # pg = red, su = blue
+                                            "blue",
+                                            "red",
+                                            rep("blue", 2),
+                                            rep("red", 2),
+                                            rep("blue", 1),
+                                            "red",
+                                            rep("blue", 7),
+                                            "red",
+                                            rep("blue", 5),
+                                            "red",
+                                            rep("blue", 10),
+                                            rep("red",10),
+                                            rep("blue", 2),
+                                            rep("red", 7),
+                                            rep("blue", 6),
+                                            rep("red", 8),
+                                            "blue",
+                                            rep("red", 7),
+                                            rep("blue", 3)),
+         air=0.01,cex=0.75)
+
+
+# 2.2.3 May ####
+may <- filter(subset, Month == "5")
+
+
+NMDS_may <- metaMDS(may[,c(2:25)],k=2,trymax=50)
+
+stressplot(NMDS_may)
+plot(NMDS_may, type = "text")
+ordiplot(NMDS_may,type="n")
+orditorp(NMDS_may,display="species",col="red",air=0.01)
+orditorp(NMDS_may,display="sites",cex=0.75,air=0.01)
+
+
+fa_pca_method_may <- c("pg",
+                       "su",
+                      "pg",
+                      rep("su", 2),
+                      rep("pg", 3),
+                      "su",
+                      "pg",
+                      "su",
+                      "pg",
+                      rep("su", 3),
+                      rep("pg", 4),
+                      rep("su", 9),
+                      "pg",
+                      rep("su", 3),
+                      rep("pg", 2),
+                      rep("su", 18),
+                      rep("pg", 2),
+                      rep("su", 2),
+                      rep("pg", 5),
+                      "su",
+                      rep("pg", 3),
+                      rep("su", 2),
+                      rep("pg", 17))
+
+
+ordiplot(NMDS_may,type="n")
+ordihull(NMDS_may, groups=fa_pca_method_may,draw="polygon",col="grey90",label=F)
+orditorp(NMDS_may,display="species",col="black",air=0.01)
+orditorp(NMDS_may,display="sites",col=c("red",         # pg = red, su = blue
+                                          "blue",
+                                          "red",
+                                          rep("blue", 2),
+                                          rep("red", 3),
+                                          "blue",
+                                          "red",
+                                          "blue",
+                                          "red",
+                                          rep("blue", 3),
+                                          rep("red", 4),
+                                          rep("blue", 9),
+                                          "red",
+                                          rep("blue", 3),
+                                          rep("red", 2),
+                                          rep("blue", 18),
+                                          rep("red", 2),
+                                          rep("blue", 2),
+                                          rep("red", 5),
+                                          "blue",
+                                          rep("red", 3),
+                                          rep("blue", 2),
+                                          rep("red", 17)),
+         air=0.01,cex=0.75)
+
+
+
+
+
+
+
+
+
 
 
 
