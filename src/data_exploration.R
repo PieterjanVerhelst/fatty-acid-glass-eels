@@ -540,12 +540,12 @@ orditorp(NMDS_may,display="sites",col=c("red",         # pg = red, su = blue
          air=0.01,cex=0.75)
 
 
+## Plot all NMDS in single figure
+grid <- matrix(c(1,1,2,3,4,5), nrow = 3,
+               ncol = 2, byrow = TRUE)
 
 
-
-
-
-
+layout(grid)
 
 
 
