@@ -92,8 +92,8 @@ unique(fa_data_su$Location)
 fa_data_su$Location_type <- NA
 
 for (i in 1:dim(fa_data_su)[1]){
-  if (fa_data_su$Location[i] == "VA_PG_LO_SU" | fa_data_su$Location[i] == "VA_PG_RO_SU"){
-    fa_data_su$Location_type[i] = "PG"
+  if (fa_data_su$Location[i] == "VA_pg_LO_SU" | fa_data_su$Location[i] == "VA_pg_RO_SU"){
+    fa_data_su$Location_type[i] = "pg"
   } else if (fa_data_su$Location[i] == "VA_MI_RO_SU"){
     fa_data_su$Location_type[i] = "MI"
   } else{
@@ -117,7 +117,7 @@ dev.off()
 
 # 1.5 Substrates near pumping station and eel ladders ==============
 
-su_pump <- filter(fa_data_su, Location_type == "PG")
+su_pump <- filter(fa_data_su, Location_type == "pg")
 su_pump$Location_type <- NULL
 su_pg <- rbind(su_pump, fa_data_pg)
 
@@ -136,14 +136,12 @@ dev.off()
 
 
 
-# 2. MDS ####
+# 2. NMDS ####
 
-fa_data2 <- read.csv("./data/raw/FA_rel.csv",stringsAsFactors = FALSE)
-fa_data2 <- fa_data2[,-1]
+#fa_data2 <- read.csv("./data/raw/FA_rel.csv",stringsAsFactors = FALSE)
+#fa_data2 <- fa_data2[,-1]
 
-
-
-NMDS <- metaMDS(fa_data2,k=2,trymax=100)
+NMDS <- metaMDS(fa_data[,c(2:25)],k=2,trymax=100)
 
 stressplot(NMDS)
 plot(NMDS, type = "text")
@@ -162,16 +160,85 @@ kn <- c(7:11,28:32,58:62,83:87,112:116,142:146,172:175)
 
 #ordihull(groups=treat,draw="polygon",col="grey90",label=F)
 ordiplot(NMDS,type="n")
-orditorp(NMDS,display="species",col="red",air=0.01)
-orditorp(NMDS,display="sites",col=c(
-  rep("green",pg),
-  rep("blue",su),
-  rep("yellow", kn)), 
-  air=0.01,cex=0.75)
-
-
-
-
+orditorp(NMDS,display="species",col="black",air=0.01)
+# pg = red, su = blue, kn = green
+orditorp(NMDS,display="sites",col=c(rep("red", 2), 
+           rep("green",2), 
+           "blue",
+           rep("green",3), 
+           "red", 
+           rep("blue", 2),
+           "red",
+           "blue",
+           "red",
+           rep("blue", 2),
+           rep("red", 2),
+           "green",
+           rep("red", 2),
+           "blue",
+           "red",
+           "blue",
+           "red",
+           "blue",
+           "red",
+           "blue",
+           "red",
+           rep("blue", 9),
+           "red",
+           rep("blue", 5),
+           rep("green",2),
+           "red",
+           rep("blue", 3),
+           "green",
+           rep("blue", 5),
+           rep("red", 2),
+           "blue",
+           rep("red", 2),
+           rep("blue", 12),
+           rep("red", 2),
+           rep("blue", 3),
+           rep("red", 2),
+           rep("blue", 10),
+           rep("red", 2),
+           rep("blue", 2),
+           "green",
+           rep("red", 2),
+           rep("blue", 16),
+           "red",
+           rep("blue", 2),
+           "red",
+           rep("blue", 3),
+           rep("red", 4),
+           "blue",
+           rep("red", 2),
+           rep("blue", 5),
+           rep("red", 5),
+           rep("green", 5),
+           rep("red", 11),
+           "blue",
+           rep("green", 5),
+           rep("red", 10),
+           rep("green", 5),
+           rep("red", 6),
+           rep("blue", 2),
+           rep("green", 4),
+           rep("red", 3),
+           rep("blue", 2),
+           "green",
+           rep("red", 7),
+           rep("blue", 6),
+           rep("green", 3),
+           rep("red", 8),
+           "blue",
+           "green",
+           rep("red", 7),
+           rep("blue", 3),
+           rep("red", 5),
+           "blue",
+           rep("red", 3),
+           rep("blue", 2),
+           rep("red", 17)),
+         air=0.01,cex=0.75)
 
 
 
