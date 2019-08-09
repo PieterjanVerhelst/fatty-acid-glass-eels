@@ -38,6 +38,11 @@ permutest(bd)   # Differences between the dispersions exist (p < 0.05)
 
 
 
+# 2. SIMPER
+
+sim <- simper(df, group = meta$Fishing_method)
+sim	
+summary(sim)
 
 
 
