@@ -138,9 +138,6 @@ dev.off()
 
 # 2. NMDS ####
 
-#fa_data2 <- read.csv("./data/raw/FA_rel.csv",stringsAsFactors = FALSE)
-#fa_data2 <- fa_data2[,-1]
-
 NMDS <- metaMDS(fa_data[,c(2:25)],k=2,trymax=100)
 
 stressplot(NMDS)
@@ -150,19 +147,86 @@ orditorp(NMDS,display="species",col="red",air=0.01)
 orditorp(NMDS,display="sites",cex=0.75,air=0.01)
 
 
-
-
-#treat <- c(rep("Treatment1",12),rep("Treatment2",12))
-
-pg <- c(1:6,12:22, 33:42, 64:72, 88:97,117:126,147:156,176:185,196:205,216:220,232:245,256:265)
-su <- c(23:27, 48:55,57,73:82,102:111,132:141,157,158,160,161,167:171,186:192,194,195,206:215,221:227,229,230,246:255, 267:269,271:276)
-kn <- c(7:11,28:32,58:62,83:87,112:116,142:146,172:175)
-
-#ordihull(groups=treat,draw="polygon",col="grey90",label=F)
+fa_pca_method <- c(rep("pg", 2),
+                   rep("kn",2), 
+                   "su",
+                   rep("kn",3), 
+                   "pg", 
+                   rep("su", 2),
+                   "pg",
+                   "su",
+                   "pg",
+                   rep("su", 2),
+                   rep("pg", 2),
+                   "kn",
+                   rep("pg", 2),
+                   "su",
+                   "pg",
+                   "su",
+                   "pg",
+                   "su",
+                   "pg",
+                   "su",
+                   "pg",
+                   rep("su", 9),
+                   "pg",
+                   rep("su", 5),
+                   rep("kn",2),
+                   "pg",
+                   rep("su", 3),
+                   "kn",
+                   rep("su", 5),
+                   rep("pg", 2),
+                   "su",
+                   rep("pg", 2),
+                   rep("su", 12),
+                   rep("pg", 2),
+                   rep("su", 3),
+                   rep("pg", 2),
+                   rep("su", 10),
+                   rep("pg", 2),
+                   rep("su", 2),
+                   "kn",
+                   rep("pg", 2),
+                   rep("su", 16),
+                   "pg",
+                   rep("su", 2),
+                   "pg",
+                   rep("su", 3),
+                   rep("pg", 4),
+                   "su",
+                   rep("pg", 2),
+                   rep("su", 5),
+                   rep("pg", 5),
+                   rep("kn", 5),
+                   rep("pg", 11),
+                   "su",
+                   rep("kn", 5),
+                   rep("pg", 10),
+                   rep("kn", 5),
+                   rep("pg", 6),
+                   rep("su", 2),
+                   rep("kn", 4),
+                   rep("pg", 3),
+                   rep("su", 2),
+                   "kn",
+                   rep("pg", 7),
+                   rep("su", 6),
+                   rep("kn", 3),
+                   rep("pg", 8),
+                   "su",
+                   "kn",
+                   rep("pg", 7),
+                   rep("su", 3),
+                   rep("pg", 5),
+                   "su",
+                   rep("pg", 3),
+                   rep("su", 2),
+                   rep("pg", 17))
 ordiplot(NMDS,type="n")
+ordihull(NMDS, groups=fa_pca_method,draw="polygon",col="grey90",label=F)
 orditorp(NMDS,display="species",col="black",air=0.01)
-# pg = red, su = blue, kn = green
-orditorp(NMDS,display="sites",col=c(rep("red", 2), 
+orditorp(NMDS,display="sites",col=c(rep("red", 2),     # pg = red, su = blue, kn = green
            rep("green",2), 
            "blue",
            rep("green",3), 
