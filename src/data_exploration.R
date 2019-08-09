@@ -138,7 +138,7 @@ dev.off()
 
 # 2. NMDS ####
 
-NMDS <- metaMDS(fa_data[,c(2:25)],k=2,trymax=100)
+NMDS <- metaMDS(fa_data[,c(2:25)],k=3,trymax=100)
 
 stressplot(NMDS)
 plot(NMDS, type = "text")
