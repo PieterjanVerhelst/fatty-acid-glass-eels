@@ -25,12 +25,22 @@ meta <- subset[,c(26:33, 37)]
 adonis(df~meta$cdate, permutations = 999, method = 'euclidean')
 
 
+# Apply nested design (nestedness within Fishing_method)
+# Correct method should be method according traditional anova (Y ~ Z/X)
+adonis(df~meta$cdate, permutations = 999, strata = meta$Fishing_method, method = 'euclidean')
+adonis(df~meta$Fishing_method/meta$cdate, permutations = 999, method = 'euclidean')
+
+
+
+
 # Marginal tests: the separate effect of each environmental variable on the response matrix
-adonis2(vegdist(df, "euclidean") ~ meta$cdate + meta$Fishing_method + meta$Condition_factor, by = "margin")
+adonis2(vegdist(df, "euclidean") ~ meta$cdate + meta$Fishing_method, by = "margin")
 
 # Conditional test: the interaction between environmental variables
-adonis2(vegdist(df, "euclidean") ~ meta$cdate + meta$Fishing_method + meta$Condition_factor, by = "terms")
+adonis2(vegdist(df, "euclidean") ~ meta$cdate + meta$Fishing_method, by = "terms")
 
+
+# Visualistion of the results
 dbRDA <- capscale(vegdist(df, "euclidean") ~ meta$cdate + meta$Fishing_method + meta$Condition_factor)
 plot(dbRDA)
 summary(dbRDA)
