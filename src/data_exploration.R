@@ -12,8 +12,6 @@ library(vegan)
 
 
 
-list1 <- colnames(fa_data)
-list1 <- list1[-c(1, 26:37)]
 
 
 # 1. Create scatter plots with smoother ####
