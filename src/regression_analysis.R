@@ -7,7 +7,7 @@ library(userfriendlyscience)
 library(lsmeans)
 
 
-# Create dataset - do not take into account "kruisnetten"
+# Create dataset without "kruisnetten"
 subset <- filter(fa_data, Fishing_method == "Palinggoot" |
                    Fishing_method == "Substraat")
 
