@@ -56,7 +56,7 @@ anova(fit2, fit4)
 
 
 
-# Plot for distribution check
+# Plot to check distribution
 ggplot(subset, aes(x = Date, y = X22.6n.3)) +
   geom_point(aes(colour = factor(Fishing_method)), size = 2) +
   geom_smooth(aes(colour = factor(Fishing_method)), method ="lm", formula = y ~ poly(x,3)) 
