@@ -12,5 +12,5 @@ Fatty acid analysis on glass eels caught at the Veurne-Ambacht Canal in Nieuwpoo
 2. `upload_fa.R`: Upload fatty acid dataset and merge with glass eel metadata
 3. `data_exploration.R`: Apply data exploration
 4. `permanova_analysis.R`: Apply Permutational Multivariate Analysis of Variance (PERMANOVA)
-4. `regression_analysis.R`: Compare the regression distributions between the fishing methods 'substraat' and 'palinggoot'
+5. `regression_analysis.R`: Compare the regression distributions between the fishing methods 'substraat' and 'palinggoot'
       --> Generate Fa_polynomial.pdf
