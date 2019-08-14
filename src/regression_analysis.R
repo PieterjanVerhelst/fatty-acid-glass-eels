@@ -18,12 +18,12 @@ subset <- filter(fa_data, Fishing_method == "Palinggoot" |
 # https://stats.stackexchange.com/questions/33013/what-test-can-i-use-to-compare-slopes-from-two-or-more-regression-models
 
 # Create model
-m.interaction <- lm(cdate ~ poly(X22.5n.3, 2) * Fishing_method, data = subset)
+m.interaction <- lm(cdate ~ poly(X20.5n.3, 2) * Fishing_method, data = subset)
 anova(m.interaction)
 
 # Obtain slopes
 m.interaction$coefficients
-m.lst <- lstrends(m.interaction, "Fishing_method", var="X22.5n.3")
+m.lst <- lstrends(m.interaction, "Fishing_method", var="X20.5n.3")
 
 # Compare slopes
 pairs(m.lst)
