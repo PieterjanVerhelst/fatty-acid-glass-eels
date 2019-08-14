@@ -548,19 +548,7 @@ layout(grid)
 
 
 
-
-
-# 3. Cluster analysis ####
-
-soren <- vegdist(fa_data2, "bray")
-tree.soren <- hclust(soren, "average") 
-plot(tree.soren, hang = -1)
-
-
-
-
-
-# 4. PCA ####
+# 3. PCA ####
 library(devtools)
 install.packages("remotes")
 remotes::install_github("vqv/ggbiplot")
