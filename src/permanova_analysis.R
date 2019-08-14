@@ -26,7 +26,7 @@ adonis(df~meta$cdate, permutations = 999, method = 'euclidean')
 
 
 # Apply nested design (nestedness within Fishing_method)
-# Correct method should be method according traditional anova (Y ~ Z/X)
+# Correct method should be method according traditional anova notation (Y ~ Z/X)
 adonis(df~meta$cdate, permutations = 999, strata = meta$Fishing_method, method = 'euclidean')
 adonis(df~meta$Fishing_method/meta$cdate, permutations = 999, method = 'euclidean')
 
