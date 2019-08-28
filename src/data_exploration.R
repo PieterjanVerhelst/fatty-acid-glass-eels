@@ -661,5 +661,10 @@ ggbiplot(fa_pca, ellipse=TRUE, groups=fa_pca_method)
 ggbiplot(fa_pca, ellipse=TRUE, choices=c(3,4) , groups=fa_pca_method)
 
 
+## Analyse fatty acid ratios
+
+# Add ratios to dataset
+
+
 
 
