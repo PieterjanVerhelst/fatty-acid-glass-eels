@@ -12,7 +12,7 @@ rm(list = ls())
 
 
 # Read in data
-data <- read.csv("./data/raw/glass_eel_metadata.csv",sep=",",stringsAsFactors = FALSE)
+data <- read.csv("C:/Users/Admin/Documents/Biologie/Master/Thesis/Thesis/fatty-acid-glass-eels/data/raw/glass_eel_metadata.csv",sep=",",stringsAsFactors = FALSE)
 
 
 # Set columns in correct format
@@ -52,4 +52,6 @@ data <- subset(data, Fishing_method != "SN")
 
 # Remove NA
 data <- na.omit(data)
+
+
 
