@@ -17,6 +17,10 @@ fa_data <- left_join(fa_data, data, by = "sample_code")
 # These are glass eels not from the Veurne-Ambacht canal
 fa_data <- na.omit(fa_data)
 
+# Remove the samples that are not in the glass eel metadata
+fa_data <- fa_data[fa_data$sample_code %in% data$sample_code,]
+
+
 # Add fatty acid ratio's to dataset
 
 

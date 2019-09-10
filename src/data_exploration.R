@@ -2,16 +2,11 @@
 # By Pieterjan Verhelst
 # Pieterjan.Verhelst@ugent.be
 
-
-
 library(DataExplorer)
 library(ggplot2)
 library(ggpubr)
 library(ggloop)
 library(vegan)
-
-
-
 
 
 # 1. Create scatter plots with smoother ####
@@ -21,7 +16,7 @@ library(vegan)
 #  geom_point() +
 #  geom_smooth(method="auto", se=TRUE, fullrange=FALSE, level=0.95) # geom_abline for regression line
 
-g <- ggloop(fa_data, aes_loop(x = Date, y = X14.0:X22.6n.3)) %L+%
+g <- ggloop(fa_data, aes_loop(x = Date, y = fa_data$`14:0`: fa_data$`22:6 (n-3)`)) %L+%
   geom_point() %L+%
   geom_smooth(method="auto", se=TRUE, fullrange=FALSE, level=0.95) # geom_abline for regression line
 
@@ -29,7 +24,7 @@ g$x.Date_y.X14
 
 
 # Save plot
-pdf("./Figures/Fa_date.pdf")
+pdf("C:/Users/Admin/Documents/Biologie/Master/Thesis/Thesis/fatty-acid-glass-eels/Figures/Fa_date.pdf")
 g 
 dev.off()
 
