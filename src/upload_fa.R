@@ -32,4 +32,5 @@ fa_data <- fa_data %>%
   mutate(D = (X18.3n.3 + X18.4n.3 + X20.4n.3 + X20.5n.3 + X22.5n.3 +  X22.6n.3 ) / (X18.2n.6 +  X20.3n.6 + X20.4n.6  + X22.5n.6 + X18.2n.6)) %>%
   mutate(E = (X20.5n.3 + X22.6n.3) / (X18.2n.6 + X18.3n.3 + X18.4n.3 + X20.3n.6 + X20.4n.3 + X20.4n.6 + X20.5n.3 + X22.5n.3 + X22.5n.6 + X22.6n.3 + X18.2n.6 + X14.0 + X15.0 + X16.0 + X17.0 + X18.0 + X20.0 + X22.0 + cis.9.16.1 + X16.1.iso.17.0 + X17.1.16.2 + cis.9.18.1 + cis.11.18.1 + X20.1 + X24.1))
 
-fa_data <- setnames(fa_data, old=colnames(fa_data), new=c("sample_code","14:0", "15:0", "16:0", "16:1 iso 17:0", "16:1 (cis-9)", "17:0", "17:1 + 16:2", "18:0", "18:1 (cis-9)", "18:1 (cis-11)", "18:2 (n-6)", "20:0", "18:3 (n-3)", "20:1", "18:4 (n-3)", "20:3 (n-6)", "22:0", "20:4 (n-6)", "20:4 (n-3)", "20:5 (n-3)", "24:1", "22:5 (n-6)", "22:5 (n-3)", "22:6 (n-3)", "Date", "Location","Fishing_method", "Length", "Weight", "Pigmentation", "Pigmentation_group", "Condition_factor", "MY", "Month", "Year", "cdate", "DHA/EPA", "PUFA/(SFA + MUFA)", "EPA/AA", "n-3/n-6", "FLQ"))
+n <- colnames(fa_data)
+fa_data <- setnames(fa_data, old=colnames(fa_data), new=c(n[1:37], "DHA_EPA", "PUFA_SFAMUFA", "EPA_AA", "n3_n6", "FLQ"))

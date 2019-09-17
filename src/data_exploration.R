@@ -16,7 +16,7 @@ library(vegan)
 #  geom_point() +
 #  geom_smooth(method="auto", se=TRUE, fullrange=FALSE, level=0.95) # geom_abline for regression line
 
-g <- ggloop(fa_data, aes_loop(x = Date, y = fa_data$`14:0`: fa_data$`22:6 (n-3)`)) %L+%
+g <- ggloop(fa_data, aes_loop(x = Date, y = X14.0:X22.6n.3)) %L+%
   geom_point() %L+%
   geom_smooth(method="auto", se=TRUE, fullrange=FALSE, level=0.95) # geom_abline for regression line
 
@@ -28,6 +28,18 @@ pdf("C:/Users/Admin/Documents/Biologie/Master/Thesis/Thesis/fatty-acid-glass-eel
 g 
 dev.off()
 
+# 1.1B Fatty Acid Ratio's ===========
+
+g_ratio <- ggloop(fa_data, aes_loop(x = Date, y = DHA_EPA:FLQ)) %L+%
+  geom_point() %L+%
+  geom_smooth(method="auto", se=TRUE, fullrange=FALSE, level=0.95) # geom_abline for regression line
+
+g_ratio$x.Date_y.DHA_EPA
+
+# Save plot
+pdf("C:/Users/Admin/Documents/Biologie/Master/Thesis/Thesis/fatty-acid-glass-eels/Figures/Fa_ratios_date.pdf")
+g_ratio
+dev.off()
 
 # 1.2 Catch method ==============
 
@@ -41,11 +53,9 @@ g <- ggloop(fa_data_kn, aes_loop(x = Date, y = X14.0:X22.6n.3)) %L+%
   geom_smooth(method="auto", se=TRUE, fullrange=FALSE, level=0.95) # geom_abline for regression line
 
 # Save plot
-pdf("./Figures/Fa_date_kn.pdf")
+pdf("C:/Users/Admin/Documents/Biologie/Master/Thesis/Thesis/fatty-acid-glass-eels/Figures/Fa_date_kn.pdf")
 g 
 dev.off()
-
-
 
 # Different catch methods in 1 plot
 fa_data_no_kn <- filter(fa_data, Fishing_method == "Palinggoot" |
@@ -58,11 +68,29 @@ g <- ggloop(fa_data_no_kn, aes_loop(x = Date, y = X14.0:X22.6n.3)) %L+%
 
 
 # Save plot
-pdf("./Figures/Fa_date_Fishingmethods.pdf")
+pdf("C:/Users/Admin/Documents/Biologie/Master/Thesis/Thesis/fatty-acid-glass-eels/Figures/Fa_date_Fishingmethods.pdf")
 g 
 dev.off()
 
+# 1.2B Ratio's per catch method ===========
+g_ratio <- ggloop(fa_data_kn, aes_loop(x = Date, y = DHA_EPA:FLQ)) %L+%
+  geom_point() %L+%
+  geom_smooth(method="auto", se=TRUE, fullrange=FALSE, level=0.95) # geom_abline for regression line
 
+# Save plot
+pdf("C:/Users/Admin/Documents/Biologie/Master/Thesis/Thesis/fatty-acid-glass-eels/Figures/Fa_ratio_date_kn.pdf")
+g_ratio 
+dev.off()
+
+# Different catch methods in 1 plot
+g <- ggloop(fa_data_no_kn, aes_loop(x = Date, y = DHA_EPA:FLQ)) %L+%
+  geom_point() %L+%
+  geom_point(aes(colour = factor(Fishing_method)), size = 2) %L+%
+  geom_smooth(aes(colour = factor(Fishing_method)), method="auto", se=TRUE, fullrange=FALSE, level=0.95) # geom_abline for regression line
+# Save plot
+pdf("C:/Users/Admin/Documents/Biologie/Master/Thesis/Thesis/fatty-acid-glass-eels/Figures/Fa_ratio_date_Fishingmethods.pdf")
+g 
+dev.off()
 
 # 1.3. Weight and catch method ==============
 g <- ggloop(fa_data_no_kn, aes_loop(x = Weight, y = X14.0:X22.6n.3)) %L+%
@@ -72,7 +100,7 @@ g <- ggloop(fa_data_no_kn, aes_loop(x = Weight, y = X14.0:X22.6n.3)) %L+%
 
 
 # Save plot
-pdf("./Figures/Fa_weight_Fishingmethods.pdf")
+pdf("C:/Users/Admin/Documents/Biologie/Master/Thesis/Thesis/fatty-acid-glass-eels/Figures/Fa_weight_Fishingmethods.pdf")
 g 
 dev.off()
 
@@ -103,7 +131,7 @@ g <- ggloop(fa_data_su, aes_loop(x = Date, y = X14.0:X22.6n.3)) %L+%
 
 
 # Save plot
-pdf("./Figures/Fa_date_locationtype.pdf")
+pdf("C:/Users/Admin/Documents/Biologie/Master/Thesis/Thesis/fatty-acid-glass-eels/Figures/Fa_date_locationtype.pdf")
 g 
 dev.off()
 
@@ -122,11 +150,21 @@ g <- ggloop(su_pg, aes_loop(x = Date, y = X14.0:X22.6n.3)) %L+%
 
 
 # Save plot
-pdf("./Figures/pumpingstation.pdf")
+pdf("C:/Users/Admin/Documents/Biologie/Master/Thesis/Thesis/fatty-acid-glass-eels/Figures/pumpingstation.pdf")
 g 
 dev.off()
 
+# 1.5B Fatty acid ratio's in the substrated near pumping station and eel ladders =========
+g <- ggloop(su_pg, aes_loop(x = Date, y = DHA_EPA:FLQ)) %L+%
+  geom_point() %L+%
+  geom_point(aes(colour = factor(Fishing_method)), size = 2) %L+%
+  geom_smooth(aes(colour = factor(Fishing_method)), method="auto", se=TRUE, fullrange=FALSE, level=0.95) # geom_abline for regression line
 
+
+# Save plot
+pdf("C:/Users/Admin/Documents/Biologie/Master/Thesis/Thesis/fatty-acid-glass-eels/Figures/pumpingstation_ratios.pdf")
+g 
+dev.off()
 
 
 # 2. NMDS ####
