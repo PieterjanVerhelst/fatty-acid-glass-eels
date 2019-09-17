@@ -338,6 +338,95 @@ orditorp(NMDS,display="sites",col=c(rep("red", 2),     # pg = red, su = blue, kn
            rep("red", 17)),
          air=0.01,cex=0.75)
 
+# 2.1B Total with Ratio's ####
+NMDS_R <- metaMDS(fa_data[,c(38:42)],k=3,trymax=100)
+
+stressplot(NMDS_R)
+plot(NMDS_R, type = "text")
+ordiplot(NMDS_R,type="n")
+orditorp(NMDS_R,display="species",col="red",air=0.01)
+orditorp(NMDS_R,display="sites",cex=0.75,air=0.01)
+
+ordiplot(NMDS_R,type="n")
+ordihull(NMDS_R, groups=fa_pca_method,draw="polygon",col="grey90",label=F)
+orditorp(NMDS_R,display="species",col="black",air=0.01)
+orditorp(NMDS_R,display="sites",col=c(rep("red", 2),     # pg = red, su = blue, kn = green
+                                    rep("green",2), 
+                                    "blue",
+                                    rep("green",3), 
+                                    "red", 
+                                    rep("blue", 2),
+                                    "red",
+                                    "blue",
+                                    "red",
+                                    rep("blue", 2),
+                                    rep("red", 2),
+                                    "green",
+                                    rep("red", 2),
+                                    "blue",
+                                    "red",
+                                    "blue",
+                                    "red",
+                                    "blue",
+                                    "red",
+                                    "blue",
+                                    "red",
+                                    rep("blue", 9),
+                                    "red",
+                                    rep("blue", 5),
+                                    rep("green",2),
+                                    "red",
+                                    rep("blue", 3),
+                                    "green",
+                                    rep("blue", 5),
+                                    rep("red", 2),
+                                    "blue",
+                                    rep("red", 2),
+                                    rep("blue", 12),
+                                    rep("red", 2),
+                                    rep("blue", 3),
+                                    rep("red", 2),
+                                    rep("blue", 10),
+                                    rep("red", 2),
+                                    rep("blue", 2),
+                                    "green",
+                                    rep("red", 2),
+                                    rep("blue", 16),
+                                    "red",
+                                    rep("blue", 2),
+                                    "red",
+                                    rep("blue", 3),
+                                    rep("red", 4),
+                                    "blue",
+                                    rep("red", 2),
+                                    rep("blue", 5),
+                                    rep("red", 5),
+                                    rep("green", 5),
+                                    rep("red", 11),
+                                    "blue",
+                                    rep("green", 5),
+                                    rep("red", 10),
+                                    rep("green", 5),
+                                    rep("red", 6),
+                                    rep("blue", 2),
+                                    rep("green", 4),
+                                    rep("red", 3),
+                                    rep("blue", 2),
+                                    "green",
+                                    rep("red", 7),
+                                    rep("blue", 6),
+                                    rep("green", 3),
+                                    rep("red", 8),
+                                    "blue",
+                                    "green",
+                                    rep("red", 7),
+                                    rep("blue", 3),
+                                    rep("red", 5),
+                                    "blue",
+                                    rep("red", 3),
+                                    rep("blue", 2),
+                                    rep("red", 17)),
+         air=0.01,cex=0.75)
 
 
 # 2.1. NMDS after 15th of May only for substrates and eel ladder ####
