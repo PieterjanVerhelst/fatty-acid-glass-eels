@@ -135,6 +135,18 @@ pdf("C:/Users/Admin/Documents/Biologie/Master/Thesis/Thesis/fatty-acid-glass-eel
 g 
 dev.off()
 
+# 1.4B Difference in FA ratio's in different locations of substrates  =============================
+
+g <- ggloop(fa_data_su, aes_loop(x = Date, y = DHA_EPA:FLQ)) %L+%
+  geom_point() %L+%
+  geom_point(aes(colour = factor(Location_type)), size = 2) %L+%
+  geom_smooth(aes(colour = factor(Location_type)), method="auto", se=TRUE, fullrange=FALSE, level=0.95) # geom_abline for regression line
+
+
+# Save plot
+pdf("C:/Users/Admin/Documents/Biologie/Master/Thesis/Thesis/fatty-acid-glass-eels/Figures/Fa_ratio_date_locationtype.pdf")
+g 
+dev.off()
 
 # 1.5 Substrates near pumping station and eel ladders ==============
 
@@ -530,8 +542,6 @@ orditorp(NMDS_march,display="sites",col=c(rep("blue", 2),    # pg = red, su = bl
                                             rep("blue",2)),
          air=0.01,cex=0.75)
 
-
-
 # 2.2.2 April ####
 april <- filter(subset, Month == "4")
 
@@ -591,6 +601,7 @@ orditorp(NMDS_april,display="sites",col=c(rep("red", 2),      # pg = red, su = b
                                             rep("red", 7),
                                             rep("blue", 3)),
          air=0.01,cex=0.75)
+
 
 
 # 2.2.3 May ####
@@ -660,6 +671,7 @@ orditorp(NMDS_may,display="sites",col=c("red",         # pg = red, su = blue
          air=0.01,cex=0.75)
 
 
+
 ## Plot all NMDS in single figure
 grid <- matrix(c(1,1,2,3,4,5), nrow = 3,
                ncol = 2, byrow = TRUE)
@@ -667,8 +679,171 @@ grid <- matrix(c(1,1,2,3,4,5), nrow = 3,
 
 layout(grid)
 
+# 2.2.1B March, FA ratio's ####
+NMDS_march <- metaMDS(march[,c(38:42)],k=2,trymax=50)
+
+stressplot(NMDS_march)
+plot(NMDS_march, type = "text")
+ordiplot(NMDS_march,type="n")
+orditorp(NMDS_march,display="species",col="red",air=0.01)
+orditorp(NMDS_march,display="sites",cex=0.75,air=0.01)
 
 
+fa_pca_method_march <- c(rep("su", 2),
+                         "pg",
+                         rep("su", 3),
+                         rep("pg", 2),
+                         rep("su", 10),
+                         "pg",
+                         rep("su", 6),
+                         rep("pg", 16),
+                         "su",
+                         rep("pg", 16),
+                         rep("su",2))
+
+
+ordiplot(NMDS_march,type="n")
+ordihull(NMDS_march, groups=fa_pca_method_march,draw="polygon",col="grey90",label=F)
+orditorp(NMDS_march,display="species",col="black",air=0.01)
+orditorp(NMDS_march,display="sites",col=c(rep("blue", 2),    # pg = red, su = blue
+                                          "red",
+                                          rep("blue", 3),
+                                          rep("red", 2),
+                                          rep("blue", 10),
+                                          "red",
+                                          rep("blue", 6),
+                                          rep("red", 16),
+                                          "blue",
+                                          rep("red", 16),
+                                          rep("blue",2)),
+         air=0.01,cex=0.75)
+
+# 2.2.2B April  FA ratio's ####
+NMDS_april <- metaMDS(april[,c(38:42)],k=2,trymax=50)
+
+stressplot(NMDS_april)
+plot(NMDS_april, type = "text")
+ordiplot(NMDS_april,type="n")
+orditorp(NMDS_april,display="species",col="red",air=0.01)
+orditorp(NMDS_april,display="sites",cex=0.75,air=0.01)
+
+
+fa_pca_method_april <- c(rep("pg", 2),
+                         "su",
+                         "pg",
+                         rep("su", 2),
+                         rep("pg", 2),
+                         rep("su", 1),
+                         "pg",
+                         rep("su", 7),
+                         "pg",
+                         rep("su", 5),
+                         "pg",
+                         rep("su", 10),
+                         rep("pg",10),
+                         rep("su", 2),
+                         rep("pg", 7),
+                         rep("su", 6),
+                         rep("pg", 8),
+                         "su",
+                         rep("pg", 7),
+                         rep("su", 3))
+
+
+ordiplot(NMDS_april,type="n")
+ordihull(NMDS_april, groups=fa_pca_method_april,draw="polygon",col="grey90",label=F)
+orditorp(NMDS_april,display="species",col="black",air=0.01)
+orditorp(NMDS_april,display="sites",col=c(rep("red", 2),      # pg = red, su = blue
+                                          "blue",
+                                          "red",
+                                          rep("blue", 2),
+                                          rep("red", 2),
+                                          rep("blue", 1),
+                                          "red",
+                                          rep("blue", 7),
+                                          "red",
+                                          rep("blue", 5),
+                                          "red",
+                                          rep("blue", 10),
+                                          rep("red",10),
+                                          rep("blue", 2),
+                                          rep("red", 7),
+                                          rep("blue", 6),
+                                          rep("red", 8),
+                                          "blue",
+                                          rep("red", 7),
+                                          rep("blue", 3)),
+         air=0.01,cex=0.75)
+
+# 2.2.3B May FA ratio's ####
+NMDS_may <- metaMDS(may[,c(38:42)],k=2,trymax=50)
+
+stressplot(NMDS_may)
+plot(NMDS_may, type = "text")
+ordiplot(NMDS_may,type="n")
+orditorp(NMDS_may,display="species",col="red",air=0.01)
+orditorp(NMDS_may,display="sites",cex=0.75,air=0.01)
+
+
+fa_pca_method_may <- c("pg",
+                       "su",
+                       "pg",
+                       rep("su", 2),
+                       rep("pg", 3),
+                       "su",
+                       "pg",
+                       "su",
+                       "pg",
+                       rep("su", 3),
+                       rep("pg", 4),
+                       rep("su", 9),
+                       "pg",
+                       rep("su", 3),
+                       rep("pg", 2),
+                       rep("su", 18),
+                       rep("pg", 2),
+                       rep("su", 2),
+                       rep("pg", 5),
+                       "su",
+                       rep("pg", 3),
+                       rep("su", 2),
+                       rep("pg", 17))
+
+
+ordiplot(NMDS_may,type="n")
+ordihull(NMDS_may, groups=fa_pca_method_may,draw="polygon",col="grey90",label=F)
+orditorp(NMDS_may,display="species",col="black",air=0.01)
+orditorp(NMDS_may,display="sites",col=c("red",         # pg = red, su = blue
+                                        "blue",
+                                        "red",
+                                        rep("blue", 2),
+                                        rep("red", 3),
+                                        "blue",
+                                        "red",
+                                        "blue",
+                                        "red",
+                                        rep("blue", 3),
+                                        rep("red", 4),
+                                        rep("blue", 9),
+                                        "red",
+                                        rep("blue", 3),
+                                        rep("red", 2),
+                                        rep("blue", 18),
+                                        rep("red", 2),
+                                        rep("blue", 2),
+                                        rep("red", 5),
+                                        "blue",
+                                        rep("red", 3),
+                                        rep("blue", 2),
+                                        rep("red", 17)),
+         air=0.01,cex=0.75)
+
+## Plot all NMDS in single figure
+grid <- matrix(c(1,1,2,3,4,5), nrow = 3,
+               ncol = 2, byrow = TRUE)
+
+
+layout(grid)
 
 
 
@@ -679,8 +854,12 @@ soren <- vegdist(subset, "euclidean")
 tree.soren <- hclust(soren, "average") 
 plot(tree.soren, hang = -1)
 
+# 3B. FA ratio's Cluster analysis ####
+subset <- fa_data[,c(38:42)] 
 
-
+soren <- vegdist(subset, "euclidean")
+tree.soren <- hclust(soren, "average") 
+plot(tree.soren, hang = -1)
 
 
 # 4. PCA ####
@@ -692,6 +871,100 @@ library(ggbiplot)
 
 # Create PCA
 fa_pca <- prcomp(fa_data[,c(2:25)], center = TRUE,scale. = TRUE)
+summary(fa_pca)
+str(fa_pca)
+
+# Plot PcA
+ggbiplot(fa_pca)
+
+# Create grouping variable
+fa_pca_method <- c(rep("pg", 2), 
+                   rep("kn",2), 
+                   "su",
+                   rep("kn",3), 
+                   "pg", 
+                   rep("su", 2),
+                   "pg",
+                   "su",
+                   "pg",
+                   rep("su", 2),
+                   rep("pg", 2),
+                   "kn",
+                   rep("pg", 2),
+                   "su",
+                   "pg",
+                   "su",
+                   "pg",
+                   "su",
+                   "pg",
+                   "su",
+                   "pg",
+                   rep("su", 9),
+                   "pg",
+                   rep("su", 5),
+                   rep("kn",2),
+                   "pg",
+                   rep("su", 3),
+                   "kn",
+                   rep("su", 5),
+                   rep("pg", 2),
+                   "su",
+                   rep("pg", 2),
+                   rep("su", 12),
+                   rep("pg", 2),
+                   rep("su", 3),
+                   rep("pg", 2),
+                   rep("su", 10),
+                   rep("pg", 2),
+                   rep("su", 2),
+                   "kn",
+                   rep("pg", 2),
+                   rep("su", 16),
+                   "pg",
+                   rep("su", 2),
+                   "pg",
+                   rep("su", 3),
+                   rep("pg", 4),
+                   "su",
+                   rep("pg", 2),
+                   rep("su", 5),
+                   rep("pg", 5),
+                   rep("kn", 5),
+                   rep("pg", 11),
+                   "su",
+                   rep("kn", 5),
+                   rep("pg", 10),
+                   rep("kn", 5),
+                   rep("pg", 6),
+                   rep("su", 2),
+                   rep("kn", 4),
+                   rep("pg", 3),
+                   rep("su", 2),
+                   "kn",
+                   rep("pg", 7),
+                   rep("su", 6),
+                   rep("kn", 3),
+                 rep("pg", 8),
+                 "su",
+                 "kn",
+                 rep("pg", 7),
+                 rep("su", 3),
+                 rep("pg", 5),
+                 "su",
+                 rep("pg", 3),
+                 rep("su", 2),
+                 rep("pg", 17))
+
+# Add ellipses according to group
+ggbiplot(fa_pca, ellipse=TRUE, groups=fa_pca_method)
+
+# Look at different axes
+ggbiplot(fa_pca, ellipse=TRUE, choices=c(3,4) , groups=fa_pca_method)
+
+# 4B. PCA based on FA ratio's
+
+# Create PCA
+fa_pca <- prcomp(fa_data[,c(38:42)], center = TRUE,scale. = TRUE)
 summary(fa_pca)
 str(fa_pca)
 
@@ -781,6 +1054,3 @@ ggbiplot(fa_pca, ellipse=TRUE, groups=fa_pca_method)
 
 # Look at different axes
 ggbiplot(fa_pca, ellipse=TRUE, choices=c(3,4) , groups=fa_pca_method)
-
-
-
