@@ -113,8 +113,8 @@ unique(fa_data_su$Location)
 fa_data_su$Location_type <- NA
 
 for (i in 1:dim(fa_data_su)[1]){
-  if (fa_data_su$Location[i] == "VA_pg_LO_SU" | fa_data_su$Location[i] == "VA_pg_RO_SU"){
-    fa_data_su$Location_type[i] = "pg"
+  if (fa_data_su$Location[i] == "VA_PG_LO_SU" | fa_data_su$Location[i] == "VA_PG_RO_SU"){
+    fa_data_su$Location_type[i] = "PG"
   } else if (fa_data_su$Location[i] == "VA_MI_RO_SU"){
     fa_data_su$Location_type[i] = "MI"
   } else{
@@ -150,7 +150,7 @@ dev.off()
 
 # 1.5 Substrates near pumping station and eel ladders ==============
 
-su_pump <- filter(fa_data_su, Location_type == "pg")
+su_pump <- filter(fa_data_su, Location_type == "PG")
 su_pump$Location_type <- NULL
 su_pg <- rbind(su_pump, fa_data_pg)
 
