@@ -44,8 +44,6 @@ data$cdate <- as.numeric(data$Date)
 unique(data$Pigmentation)
 data <- subset(data, Pigmentation != "elver")
 
-
-
 # Remove substrates in Ganzepoot and IJzer en sleepnetdata
 data$Location <- factor(data$Location)
 data <- subset(data, Location != "IJZ_SU")

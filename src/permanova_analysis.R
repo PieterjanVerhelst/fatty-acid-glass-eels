@@ -12,7 +12,7 @@ library(mvnormtest)
 # 1. PERMANOVA ####
 
 # Create dataset - do not take into account "kruisnetten"
-subset <- filter(fa_data, Fishing_method == "Palinggoot" |
+subset <- filter(fa_rel, Fishing_method == "Palinggoot" |
                    Fishing_method == "Substraat")
 
 # FA data

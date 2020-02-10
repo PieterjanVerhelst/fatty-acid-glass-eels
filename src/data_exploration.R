@@ -48,6 +48,10 @@ fa_rel_pg <- filter(fa_rel, Fishing_method == "Palinggoot")
 fa_rel_su <- filter(fa_rel, Fishing_method == "Substraat")
 fa_rel_kn <- filter(fa_rel, Fishing_method == "Kruisnetten")
 
+fa_abs_pg <- filter(fa_abs, Fishing_method == "Palinggoot")
+fa_abs_su <- filter(fa_abs, Fishing_method == "Substraat")
+fa_abs_kn <- filter(fa_abs, Fishing_method == "Kruisnetten")
+
 g <- ggloop(fa_rel_kn, aes_loop(x = Date, y = X14.0:X22.6n.3)) %L+%
   geom_point() %L+%
   geom_smooth(method="auto", se=TRUE, fullrange=FALSE, level=0.95) # geom_abline for regression line
@@ -1065,13 +1069,22 @@ ggbiplot(fa_pca, ellipse=TRUE, groups=fa_pca_method)
 # Look at different axes
 ggbiplot(fa_pca, ellipse=TRUE, choices=c(3,4) , groups=fa_pca_method)
 
-# 3. Absolute values => klopt nog niet, waaro zit hier wel nog een elver in?
-g_abs <- ggplot(fa_abs, aes(x = Date, y = total_FA)) %L+%
+# 3. Absolute values 
+## => Er zit één glasaal met een totale vetzuurconcentratie van 1674,298, deze wordt er eerst uitgefilterd (enige heel sterke uitloper)
+## => Negatieve vetzuurconcentraties worden er ook uitgehaald
+fa_abs <- filter(fa_abs, between(total_FA, 0, 1000))
+g_abs <- ggplot(fa_abs, aes(x = Date, y = total_FA)) +
   geom_point() 
-  
-geom_smooth(method="auto", se=TRUE, fullrange=FALSE, level=0.95) # geom_abline for regression line
 
-g_abs
+fa_abs_no_kn <- filter(fa_abs, Fishing_method == "Palinggoot" |
+                         Fishing_method == "Substraat")
+  
+g_abs_method <- ggplot(fa_abs_no_kn, aes(x = Date, y = total_FA)) +
+  geom_point(aes(colour=factor(Fishing_method))) +
+  geom_smooth(aes(colour = factor(Fishing_method)), method="auto", se=TRUE, fullrange=FALSE, level=0.95) # geom_abline for regression line
+
+g_abs_method
+
 
 # Save plot
 pdf("Figures/Fa_ratios_date.pdf")
