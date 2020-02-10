@@ -12,7 +12,8 @@ rm(list = ls())
 
 
 # Read in data
-data <- read.csv("C:/Users/Admin/Documents/Biologie/Master/Thesis/Thesis/fatty-acid-glass-eels/data/raw/glass_eel_metadata.csv",sep=",",stringsAsFactors = FALSE)
+setwd("C:/Users/Admin/Documents/Biologie/Master/Thesis/Thesis/fatty-acid-glass-eels")
+data <- read.csv("data/raw/glass_eel_metadata.csv",sep=",",stringsAsFactors = FALSE)
 
 
 # Set columns in correct format
@@ -42,6 +43,7 @@ data$cdate <- as.numeric(data$Date)
 # Remove elvers
 unique(data$Pigmentation)
 data <- subset(data, Pigmentation != "elver")
+
 
 
 # Remove substrates in Ganzepoot and IJzer en sleepnetdata

@@ -12,11 +12,11 @@ library(vegan)
 # 1. Create scatter plots with smoother ####
 
 # 1.1 All ==============
-#ggplot(fa_data, aes(x=Date, y=X14.0)) + 
+#ggplot(fa_rel, aes(x=Date, y=X14.0)) + 
 #  geom_point() +
 #  geom_smooth(method="auto", se=TRUE, fullrange=FALSE, level=0.95) # geom_abline for regression line
 
-g <- ggloop(fa_data, aes_loop(x = Date, y = X14.0:X22.6n.3)) %L+%
+g <- ggloop(fa_rel, aes_loop(x = Date, y = X14.0:X22.6n.3)) %L+%
   geom_point() %L+%
   geom_smooth(method="auto", se=TRUE, fullrange=FALSE, level=0.95) # geom_abline for regression line
 
@@ -24,135 +24,145 @@ g$x.Date_y.X14
 
 
 # Save plot
-pdf("C:/Users/Admin/Documents/Biologie/Master/Thesis/Thesis/fatty-acid-glass-eels/Figures/Fa_date.pdf")
+pdf("Figures/Fa_date.pdf")
 g 
 dev.off()
 
 # 1.1B Fatty Acid Ratio's ===========
 
-g_ratio <- ggloop(fa_data, aes_loop(x = Date, y = DHA_EPA:FLQ)) %L+%
+g_ratio <- ggloop(fa_rel, aes_loop(x = Date, y = DHA_EPA:FLQ)) %L+%
   geom_point() %L+%
   geom_smooth(method="auto", se=TRUE, fullrange=FALSE, level=0.95) # geom_abline for regression line
 
 g_ratio$x.Date_y.DHA_EPA
 
 # Save plot
-pdf("C:/Users/Admin/Documents/Biologie/Master/Thesis/Thesis/fatty-acid-glass-eels/Figures/Fa_ratios_date.pdf")
+pdf("Figures/Fa_ratios_date.pdf")
 g_ratio
 dev.off()
 
 # 1.2 Catch method ==============
 
 # Per catch method
-fa_data_pg <- filter(fa_data, Fishing_method == "Palinggoot")
-fa_data_su <- filter(fa_data, Fishing_method == "Substraat")
-fa_data_kn <- filter(fa_data, Fishing_method == "Kruisnetten")
+fa_rel_pg <- filter(fa_rel, Fishing_method == "Palinggoot")
+fa_rel_su <- filter(fa_rel, Fishing_method == "Substraat")
+fa_rel_kn <- filter(fa_rel, Fishing_method == "Kruisnetten")
 
-g <- ggloop(fa_data_kn, aes_loop(x = Date, y = X14.0:X22.6n.3)) %L+%
+g <- ggloop(fa_rel_kn, aes_loop(x = Date, y = X14.0:X22.6n.3)) %L+%
   geom_point() %L+%
   geom_smooth(method="auto", se=TRUE, fullrange=FALSE, level=0.95) # geom_abline for regression line
 
 # Save plot
-pdf("C:/Users/Admin/Documents/Biologie/Master/Thesis/Thesis/fatty-acid-glass-eels/Figures/Fa_date_kn.pdf")
+pdf("Figures/Fa_date_kn.pdf")
 g 
 dev.off()
 
 # Different catch methods in 1 plot
-fa_data_no_kn <- filter(fa_data, Fishing_method == "Palinggoot" |
+fa_rel_no_kn <- filter(fa_rel, Fishing_method == "Palinggoot" |
                         Fishing_method == "Substraat")
 
-g <- ggloop(fa_data_no_kn, aes_loop(x = Date, y = X14.0:X22.6n.3)) %L+%
+g <- ggloop(fa_rel_no_kn, aes_loop(x = Date, y = X14.0:X22.6n.3)) %L+%
   geom_point() %L+%
   geom_point(aes(colour = factor(Fishing_method)), size = 2) %L+%
   geom_smooth(aes(colour = factor(Fishing_method)), method="auto", se=TRUE, fullrange=FALSE, level=0.95) # geom_abline for regression line
 
 
 # Save plot
-pdf("C:/Users/Admin/Documents/Biologie/Master/Thesis/Thesis/fatty-acid-glass-eels/Figures/Fa_date_Fishingmethods.pdf")
+pdf("Figures/Fa_date_Fishingmethods.pdf")
 g 
 dev.off()
 
 # 1.2B Ratio's per catch method ===========
-g_ratio <- ggloop(fa_data_kn, aes_loop(x = Date, y = DHA_EPA:FLQ)) %L+%
+g_ratio <- ggloop(fa_rel_kn, aes_loop(x = Date, y = DHA_EPA:FLQ)) %L+%
   geom_point() %L+%
   geom_smooth(method="auto", se=TRUE, fullrange=FALSE, level=0.95) # geom_abline for regression line
 
 # Save plot
-pdf("C:/Users/Admin/Documents/Biologie/Master/Thesis/Thesis/fatty-acid-glass-eels/Figures/Fa_ratio_date_kn.pdf")
+pdf("Figures/Fa_ratio_date_kn.pdf")
 g_ratio 
 dev.off()
 
 # Different catch methods in 1 plot
-g <- ggloop(fa_data_no_kn, aes_loop(x = Date, y = DHA_EPA:FLQ)) %L+%
+g <- ggloop(fa_rel_no_kn, aes_loop(x = Date, y = DHA_EPA:FLQ)) %L+%
   geom_point() %L+%
   geom_point(aes(colour = factor(Fishing_method)), size = 2) %L+%
   geom_smooth(aes(colour = factor(Fishing_method)), method="auto", se=TRUE, fullrange=FALSE, level=0.95) # geom_abline for regression line
 # Save plot
-pdf("C:/Users/Admin/Documents/Biologie/Master/Thesis/Thesis/fatty-acid-glass-eels/Figures/Fa_ratio_date_Fishingmethods.pdf")
+pdf("Figures/Fa_ratio_date_Fishingmethods.pdf")
 g 
 dev.off()
 
 # 1.3. Weight and catch method ==============
-g <- ggloop(fa_data_no_kn, aes_loop(x = Weight, y = X14.0:X22.6n.3)) %L+%
+g <- ggloop(fa_rel_no_kn, aes_loop(x = Weight, y = X14.0:X22.6n.3)) %L+%
   geom_point() %L+%
   geom_point(aes(colour = factor(Fishing_method)), size = 2) %L+%
   geom_smooth(aes(colour = factor(Fishing_method)), method="auto", se=TRUE, fullrange=FALSE, level=0.95) # geom_abline for regression line
 
 
 # Save plot
-pdf("C:/Users/Admin/Documents/Biologie/Master/Thesis/Thesis/fatty-acid-glass-eels/Figures/Fa_weight_Fishingmethods.pdf")
+pdf("Figures/Fa_weight_Fishingmethods.pdf")
 g 
 dev.off()
 
 
 
+# 1.3B. Differences in FA ratio's related to weight ==========
+g <- ggloop(fa_rel_no_kn, aes_loop(x = Weight, y = DHA_EPA:FLQ)) %L+%
+  geom_point() %L+%
+  geom_point(aes(colour = factor(Fishing_method)), size = 2) %L+%
+  geom_smooth(aes(colour = factor(Fishing_method)), method="auto", se=TRUE, fullrange=FALSE, level=0.95) # geom_abline for regression line
+# Save plot
+pdf("Figures/Fa_ratio_weight_Fishingmethods.pdf")
+g 
+dev.off()
+
 # 1.4. Different locations of substrates ==============
 
-unique(fa_data_su$Location)
+unique(fa_rel_su$Location)
 
-fa_data_su$Location_type <- NA
+fa_rel_su$Location_type <- NA
 
-for (i in 1:dim(fa_data_su)[1]){
-  if (fa_data_su$Location[i] == "VA_PG_LO_SU" | fa_data_su$Location[i] == "VA_PG_RO_SU"){
-    fa_data_su$Location_type[i] = "PG"
-  } else if (fa_data_su$Location[i] == "VA_MI_RO_SU"){
-    fa_data_su$Location_type[i] = "MI"
+for (i in 1:dim(fa_rel_su)[1]){
+  if (fa_rel_su$Location[i] == "VA_PG_LO_SU" | fa_rel_su$Location[i] == "VA_PG_RO_SU"){
+    fa_rel_su$Location_type[i] = "PG"
+  } else if (fa_rel_su$Location[i] == "VA_MI_RO_SU"){
+    fa_rel_su$Location_type[i] = "MI"
   } else{
-    fa_data_su$Location_type[i] = "SC"
+    fa_rel_su$Location_type[i] = "SC"
   }}
 
-fa_data_su$Location_type <- factor(fa_data_su$Location_type)
+fa_rel_su$Location_type <- factor(fa_rel_su$Location_type)
 
 
-g <- ggloop(fa_data_su, aes_loop(x = Date, y = X14.0:X22.6n.3)) %L+%
+g <- ggloop(fa_rel_su, aes_loop(x = Date, y = X14.0:X22.6n.3)) %L+%
   geom_point() %L+%
   geom_point(aes(colour = factor(Location_type)), size = 2) %L+%
   geom_smooth(aes(colour = factor(Location_type)), method="auto", se=TRUE, fullrange=FALSE, level=0.95) # geom_abline for regression line
 
 
 # Save plot
-pdf("C:/Users/Admin/Documents/Biologie/Master/Thesis/Thesis/fatty-acid-glass-eels/Figures/Fa_date_locationtype.pdf")
+pdf("Figures/Fa_date_locationtype.pdf")
 g 
 dev.off()
 
 # 1.4B Difference in FA ratio's in different locations of substrates  =============================
 
-g <- ggloop(fa_data_su, aes_loop(x = Date, y = DHA_EPA:FLQ)) %L+%
+g <- ggloop(fa_rel_su, aes_loop(x = Date, y = DHA_EPA:FLQ)) %L+%
   geom_point() %L+%
   geom_point(aes(colour = factor(Location_type)), size = 2) %L+%
   geom_smooth(aes(colour = factor(Location_type)), method="auto", se=TRUE, fullrange=FALSE, level=0.95) # geom_abline for regression line
 
 
 # Save plot
-pdf("C:/Users/Admin/Documents/Biologie/Master/Thesis/Thesis/fatty-acid-glass-eels/Figures/Fa_ratio_date_locationtype.pdf")
+pdf("Figures/Fa_ratio_date_locationtype.pdf")
 g 
 dev.off()
 
 # 1.5 Substrates near pumping station and eel ladders ==============
 
-su_pump <- filter(fa_data_su, Location_type == "PG")
+su_pump <- filter(fa_rel_su, Location_type == "PG")
 su_pump$Location_type <- NULL
-su_pg <- rbind(su_pump, fa_data_pg)
+su_pg <- rbind(su_pump, fa_rel_pg)
 
 
 g <- ggloop(su_pg, aes_loop(x = Date, y = X14.0:X22.6n.3)) %L+%
@@ -162,7 +172,7 @@ g <- ggloop(su_pg, aes_loop(x = Date, y = X14.0:X22.6n.3)) %L+%
 
 
 # Save plot
-pdf("C:/Users/Admin/Documents/Biologie/Master/Thesis/Thesis/fatty-acid-glass-eels/Figures/pumpingstation.pdf")
+pdf("Figures/pumpingstation.pdf")
 g 
 dev.off()
 
@@ -174,7 +184,7 @@ g <- ggloop(su_pg, aes_loop(x = Date, y = DHA_EPA:FLQ)) %L+%
 
 
 # Save plot
-pdf("C:/Users/Admin/Documents/Biologie/Master/Thesis/Thesis/fatty-acid-glass-eels/Figures/pumpingstation_ratios.pdf")
+pdf("Figures/pumpingstation_ratios.pdf")
 g 
 dev.off()
 
@@ -182,7 +192,7 @@ dev.off()
 # 2. NMDS ####
 
 # 2.1. Total ####
-NMDS <- metaMDS(fa_data[,c(2:25)],k=3,trymax=100)
+NMDS <- metaMDS(fa_rel[,c(2:25)],k=3,trymax=100)
 
 stressplot(NMDS)
 plot(NMDS, type = "text")
@@ -351,7 +361,7 @@ orditorp(NMDS,display="sites",col=c(rep("red", 2),     # pg = red, su = blue, kn
          air=0.01,cex=0.75)
 
 # 2.1B Total with Ratio's ####
-NMDS_R <- metaMDS(fa_data[,c(38:42)],k=3,trymax=100)
+NMDS_R <- metaMDS(fa_rel[,c(38:42)],k=3,trymax=100)
 
 stressplot(NMDS_R)
 plot(NMDS_R, type = "text")
@@ -443,7 +453,7 @@ orditorp(NMDS_R,display="sites",col=c(rep("red", 2),     # pg = red, su = blue, 
 
 # 2.1. NMDS after 15th of May only for substrates and eel ladder ####
 
-subset <- filter(fa_data, Fishing_method == "Palinggoot" |
+subset <- filter(fa_rel, Fishing_method == "Palinggoot" |
                           Fishing_method == "Substraat")
 subset <- filter(subset, cdate > 17296)
 
@@ -497,7 +507,7 @@ orditorp(NMDS2,display="sites",col=c("red",              # pg = red, su = blue
 
 # 2.2. NMDS per month ####
 
-subset <- filter(fa_data, Fishing_method == "Palinggoot" |
+subset <- filter(fa_rel, Fishing_method == "Palinggoot" |
                    Fishing_method == "Substraat")
 
 # 2.2.1 March ####
@@ -848,14 +858,14 @@ layout(grid)
 
 
 # 3. Cluster analysis ####
-subset <- fa_data[,c(2:25)] 
+subset <- fa_rel[,c(2:25)] 
 
 soren <- vegdist(subset, "euclidean")
 tree.soren <- hclust(soren, "average") 
 plot(tree.soren, hang = -1)
 
 # 3B. FA ratio's Cluster analysis ####
-subset <- fa_data[,c(38:42)] 
+subset <- fa_rel[,c(38:42)] 
 
 soren <- vegdist(subset, "euclidean")
 tree.soren <- hclust(soren, "average") 
@@ -870,7 +880,7 @@ library(ggbiplot)
 
 
 # Create PCA
-fa_pca <- prcomp(fa_data[,c(2:25)], center = TRUE,scale. = TRUE)
+fa_pca <- prcomp(fa_rel[,c(2:25)], center = TRUE,scale. = TRUE)
 summary(fa_pca)
 str(fa_pca)
 
@@ -964,7 +974,7 @@ ggbiplot(fa_pca, ellipse=TRUE, choices=c(3,4) , groups=fa_pca_method)
 # 4B. PCA based on FA ratio's
 
 # Create PCA
-fa_pca <- prcomp(fa_data[,c(38:42)], center = TRUE,scale. = TRUE)
+fa_pca <- prcomp(fa_rel[,c(38:42)], center = TRUE,scale. = TRUE)
 summary(fa_pca)
 str(fa_pca)
 
