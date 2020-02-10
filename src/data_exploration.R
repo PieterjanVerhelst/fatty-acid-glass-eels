@@ -1064,3 +1064,16 @@ ggbiplot(fa_pca, ellipse=TRUE, groups=fa_pca_method)
 
 # Look at different axes
 ggbiplot(fa_pca, ellipse=TRUE, choices=c(3,4) , groups=fa_pca_method)
+
+# 3. Absolute values => klopt nog niet, waaro zit hier wel nog een elver in?
+g_abs <- ggplot(fa_abs, aes(x = Date, y = total_FA)) %L+%
+  geom_point() 
+  
+geom_smooth(method="auto", se=TRUE, fullrange=FALSE, level=0.95) # geom_abline for regression line
+
+g_abs
+
+# Save plot
+pdf("Figures/Fa_ratios_date.pdf")
+g_ratio
+dev.off()
