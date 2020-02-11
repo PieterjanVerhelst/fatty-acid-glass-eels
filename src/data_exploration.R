@@ -8,6 +8,10 @@ library(ggpubr)
 library(ggloop)
 library(vegan)
 
+# Calculate average relative contribution of FA groups
+
+
+
 
 # 1. Create scatter plots with smoother ####
 
@@ -30,7 +34,7 @@ dev.off()
 
 # 1.1B Fatty Acid Ratio's ===========
 
-g_ratio <- ggloop(fa_rel, aes_loop(x = Date, y = DHA_EPA:FLQ)) %L+%
+g_ratio <- ggloop(fa_rel, aes_loop(x = Date, y = DHA_EPA:Dinoflagellate_biomarker)) %L+%
   geom_point() %L+%
   geom_smooth(method="auto", se=TRUE, fullrange=FALSE, level=0.95) # geom_abline for regression line
 
@@ -77,7 +81,7 @@ g
 dev.off()
 
 # 1.2B Ratio's per catch method ===========
-g_ratio <- ggloop(fa_rel_kn, aes_loop(x = Date, y = DHA_EPA:FLQ)) %L+%
+g_ratio <- ggloop(fa_rel_kn, aes_loop(x = Date, y = DHA_EPA:Dinoflagellate_biomarker)) %L+%
   geom_point() %L+%
   geom_smooth(method="auto", se=TRUE, fullrange=FALSE, level=0.95) # geom_abline for regression line
 
@@ -87,7 +91,7 @@ g_ratio
 dev.off()
 
 # Different catch methods in 1 plot
-g <- ggloop(fa_rel_no_kn, aes_loop(x = Date, y = DHA_EPA:FLQ)) %L+%
+g <- ggloop(fa_rel_no_kn, aes_loop(x = Date, y = DHA_EPA:Dinoflagellate_biomarker)) %L+%
   geom_point() %L+%
   geom_point(aes(colour = factor(Fishing_method)), size = 2) %L+%
   geom_smooth(aes(colour = factor(Fishing_method)), method="auto", se=TRUE, fullrange=FALSE, level=0.95) # geom_abline for regression line
