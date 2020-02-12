@@ -34,7 +34,7 @@ dev.off()
 
 # 1.1B Fatty Acid Ratio's ===========
 
-g_ratio <- ggloop(fa_rel, aes_loop(x = Date, y = DHA_EPA:Dinoflagellate_biomarker)) %L+%
+g_ratio <- ggloop(fa_rel, aes_loop(x = Date, y = DHA_EPA:Diatom_production)) %L+%
   geom_point() %L+%
   geom_smooth(method="auto", se=TRUE, fullrange=FALSE, level=0.95) # geom_abline for regression line
 
@@ -81,7 +81,7 @@ g
 dev.off()
 
 # 1.2B Ratio's per catch method ===========
-g_ratio <- ggloop(fa_rel_kn, aes_loop(x = Date, y = DHA_EPA:Dinoflagellate_biomarker)) %L+%
+g_ratio <- ggloop(fa_rel_kn, aes_loop(x = Date, y = DHA_EPA:Diatom_production)) %L+%
   geom_point() %L+%
   geom_smooth(method="auto", se=TRUE, fullrange=FALSE, level=0.95) # geom_abline for regression line
 
@@ -91,7 +91,7 @@ g_ratio
 dev.off()
 
 # Different catch methods in 1 plot
-g <- ggloop(fa_rel_no_kn, aes_loop(x = Date, y = DHA_EPA:Dinoflagellate_biomarker)) %L+%
+g <- ggloop(fa_rel_no_kn, aes_loop(x = Date, y = DHA_EPA:Diatom_production)) %L+%
   geom_point() %L+%
   geom_point(aes(colour = factor(Fishing_method)), size = 2) %L+%
   geom_smooth(aes(colour = factor(Fishing_method)), method="auto", se=TRUE, fullrange=FALSE, level=0.95) # geom_abline for regression line
@@ -1074,7 +1074,7 @@ ggbiplot(fa_pca, ellipse=TRUE, groups=fa_pca_method)
 ggbiplot(fa_pca, ellipse=TRUE, choices=c(3,4) , groups=fa_pca_method)
 
 # 3. Absolute values 
-## => Er zit één glasaal met een totale vetzuurconcentratie van 1674,298, deze wordt er eerst uitgefilterd (enige heel sterke uitloper)
+## => Er zit ??n glasaal met een totale vetzuurconcentratie van 1674,298, deze wordt er eerst uitgefilterd (enige heel sterke uitloper)
 ## => Negatieve vetzuurconcentraties worden er ook uitgehaald
 fa_abs <- filter(fa_abs, between(total_FA, 0, 1000))
 g_abs <- ggplot(fa_abs, aes(x = Date, y = total_FA)) +
@@ -1090,7 +1090,17 @@ g_abs_method <- ggplot(fa_abs_no_kn, aes(x = Date, y = total_FA)) +
 g_abs_method
 
 
-# Save plot
-pdf("Figures/Fa_ratios_date.pdf")
-g_ratio
-dev.off()
+# 4. Fix the boxplot
+
+avg_FA_ <- fa_rel_no_kn %>%
+  group_by(Fishing_method) %>%
+  summarise(avg_14.0 = mean(X14.0),
+            avg_15.0 = mean(X15.0),
+            avg_16.0 = mean(X16.0),
+            avg_16.1.i17.0 = mean(X16.1.iso.17.0),
+            avg_16.1.n9 = mean(cis.9.18.1),
+            avg_17.0 = mean(X17.0),
+            avg_17.1.16.2 = mean(X17.1.16.2),
+            avg_18.0 = mean(X18.0))
+
+

@@ -36,19 +36,10 @@ fa_rel <- fa_rel %>%
   mutate(C = X20.5n.3 / X20.4n.6) %>%
   mutate(D = (X18.3n.3 + X18.4n.3 + X20.4n.3 + X20.5n.3 + X22.5n.3 +  X22.6n.3 ) / (X18.2n.6 +  X20.3n.6 + X20.4n.6  + X22.5n.6 + X18.2n.6)) %>%
   mutate(E = (X20.5n.3 + X22.6n.3) / (X18.2n.6 + X18.3n.3 + X18.4n.3 + X20.3n.6 + X20.4n.3 + X20.4n.6 + X20.5n.3 + X22.5n.3 + X22.5n.6 + X22.6n.3 + X18.2n.6 + X14.0 + X15.0 + X16.0 + X17.0 + X18.0 + X20.0 + X22.0 + cis.9.16.1 + X16.1.iso.17.0 + X17.1.16.2 + cis.9.18.1 + cis.11.18.1 + X20.1 + X24.1)) %>%
-  mutate(F = (X22.6n.3/X20.5n.3))
+  mutate(F = (X22.6n.3/X20.5n.3)) %>%
+  mutate(G = (X20.5n.3/X18.4n.3))
 
 n <- colnames(fa_rel)
-fa_rel <- setnames(fa_rel, old=colnames(fa_rel), new=c(n[1:37], "DHA_EPA", "PUFA_SFAMUFA", "EPA_AA", "n3_n6", "FLQ", "Dinoflagellate_biomarker"))
+fa_rel <- setnames(fa_rel, old=colnames(fa_rel), new=c(n[1:37], "DHA_EPA", "PUFA_SFAMUFA", "EPA_AA", "n3_n6", "FLQ", "Dinoflagellate_biomarker", "Diatom_production"))
 
-fa_abs <- fa_abs %>%
-  mutate(A = X22.6n.3 /X20.5n.3 ) %>%
-  mutate(B = (X18.2n.6 + X18.3n.3 + X18.4n.3 + X20.3n.6 + X20.4n.3 + X20.4n.6 + X20.5n.3 + X22.5n.3 + X22.5n.6 + X22.6n.3 + X18.2n.6) /
-           (X14.00 + X15.00 + X16.00 + X17.00 + X18.00 + X20.00 + X22.00 + cis.9.16.1 + X16.1.iso.17.0 + X17.1.16.2 + cis.9.18.1 + cis.11.18.1 + X20.01 + X24.01.00)) %>%
-  mutate(C = X20.5n.3 / X20.4n.6) %>%
-  mutate(D = (X18.3n.3 + X18.4n.3 + X20.4n.3 + X20.5n.3 + X22.5n.3 +  X22.6n.3 ) / (X18.2n.6 +  X20.3n.6 + X20.4n.6  + X22.5n.6 + X18.2n.6)) %>%
-  mutate(E = (X20.5n.3 + X22.6n.3) / (X18.2n.6 + X18.3n.3 + X18.4n.3 + X20.3n.6 + X20.4n.3 + X20.4n.6 + X20.5n.3 + X22.5n.3 + X22.5n.6 + X22.6n.3 + X18.2n.6 + X14.00 + X15.00 + X16.00 + X17.00 + X18.00 + X20.00 + X22.00 + cis.9.16.1 + X16.1.iso.17.0 + X17.1.16.2 + cis.9.18.1 + cis.11.18.1 + X20.01 + X24.01.00))
-
-n <- colnames(fa_abs)
-fa_abs <- setnames(fa_abs, old=colnames(fa_abs), new=c(n[1:38], "DHA_EPA", "PUFA_SFAMUFA", "EPA_AA", "n3_n6", "FLQ"))
 
