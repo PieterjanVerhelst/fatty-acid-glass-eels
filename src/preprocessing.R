@@ -12,7 +12,6 @@ rm(list = ls())
 
 
 # Read in data
-setwd("C:/Users/Admin/Documents/Biologie/Master/Thesis/Thesis/fatty-acid-glass-eels")
 data <- read.csv("data/raw/glass_eel_metadata.csv",sep=",",stringsAsFactors = FALSE)
 
 

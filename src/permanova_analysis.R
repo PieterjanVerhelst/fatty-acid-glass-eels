@@ -22,15 +22,13 @@ meta <- subset[,c(26:33, 37)]
 
 # Perform PERMANOVA
 # R2 gives the explained variance
-adonis(df~meta$cdate, permutations = 999, method = 'euclidean')
+adonis(df~meta$cdate, permutations = 999, method = 'euclidean') # Date explains +- 33%
 
 
 # Apply nested design (nestedness within Fishing_method)
 # Correct method should be method according traditional anova notation (Y ~ Z/X)
-adonis(df~meta$cdate, permutations = 999, strata = meta$Fishing_method, method = 'euclidean')
-adonis(df~meta$Fishing_method/meta$cdate, permutations = 999, method = 'euclidean')
-
-
+adonis(df~meta$Fishing_method/meta$cdate, permutations = 999, method = 'euclidean') # When corrected for fishing method, 35% of FA compositional variation is explained by the date
+# Does this also mean there's a significant difference between the two methods? Does this difference explain 6% variation?
 
 
 # Marginal tests: the separate effect of each environmental variable on the response matrix
@@ -44,9 +42,6 @@ adonis2(vegdist(df, "euclidean") ~ meta$cdate + meta$Fishing_method, by = "terms
 dbRDA <- capscale(vegdist(df, "euclidean") ~ meta$cdate + meta$Fishing_method + meta$Condition_factor)
 plot(dbRDA)
 summary(dbRDA)
-
-
-
 
 
 # 2. Pairwise comparison ####
