@@ -7,11 +7,10 @@ library(ggplot2)
 library(ggpubr)
 library(ggloop)
 library(vegan)
+library(AppliedPredictiveModeling)
+library(caret)
 
 # Calculate average relative contribution of FA groups
-
-
-
 
 # 1. Create scatter plots with smoother ####
 
