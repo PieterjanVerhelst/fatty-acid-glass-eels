@@ -1,0 +1,277 @@
+nr;datum;Locatie;Methode;Locatie_VA;Gewicht Glasaal;Gewicht maag-darmstelsel;Anorganic Material;Cladocera sp.;Annelida;Polychaete;Isopoda;Diptera sp.;Chironomida sp.;Crustaceae sp.;Cyclopoida sp.;Unidentified sp.;Amphipoda sp.;Calanoida sp.;Copepoda sp.;Harpacticoida sp.;Hexapoda sp.;Coleoptera Larvae;Pennate diatom;Plantae sp.;Stomach
+1;10/03/2017;PG-RO-PA;Eel Ladder;Pumping Station;0,259;0,0089;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;Empty
+2;10/03/2017;PG-RO-PA;Eel Ladder;Pumping Station;0,281;0,0102;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;Empty
+3;10/03/2017;PG-RO-PA;Eel Ladder;Pumping Station;0,176;0,0035;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;Empty
+4;10/03/2017;PG-RO-PA;Eel Ladder;Pumping Station;0,206;0,005;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;Empty
+5;10/03/2017;PG-RO-PA;Eel Ladder;Pumping Station;0,264;0,0069;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;Empty
+6;10/03/2017;PG-LO-PA;Eel Ladder;Pumping Station;0,199;0,0055;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;Empty
+7;11/03/2017;PG-KR;Lift Nets;Pumping Station;0,146;0,0041;0;0;0;0;0;0;0;0;0;1;0;0;0;0;0;0;0;0;Food present
+8;11/03/2017;PG-KR;Lift Nets;Pumping Station;0,117;0,0044;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;Empty
+9;11/03/2017;PG-KR;Lift Nets;Pumping Station;0,156;0,0042;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;Empty
+10;11/03/2017;PG-KR;Lift Nets;Pumping Station;0,205;0,0058;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;Empty
+11;11/03/2017;PG-KR;Lift Nets;Pumping Station;0,196;0,001;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;Empty
+12;17/03/2017;PG-RO-PA;Eel Ladder;Pumping Station;0,2101;0,0064;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;Empty
+13;17/03/2017;PG-RO-PA;Eel Ladder;Pumping Station;0,223;0,009;0;0;0;1;0;0;0;0;0;0;0;0;0;0;0;0;0;0;Food present
+14;17/03/2017;PG-RO-PA;Eel Ladder;Pumping Station;0,25;0,007;0;0;0;1;0;0;0;0;0;0;0;0;0;0;0;0;0;0;Food present
+15;17/03/2017;PG-RO-PA;Eel Ladder;Pumping Station;0,11;0,003;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;Empty
+16;17/03/2017;PG-RO-PA;Eel Ladder;Pumping Station;0,26;0,0066;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;Empty
+17;17/03/2017;PG-LO-PA;Eel Ladder;Pumping Station;0,196;0,0074;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;Empty
+18;17/03/2017;PG-LO-PA;Eel Ladder;Pumping Station;0,236;0,009;0;0;0;0;0;0;0;0;0;1;0;0;0;0;0;0;0;0;Food present
+19;17/03/2017;PG-LO-PA;Eel Ladder;Pumping Station;0,202;0,0072;0;0;0;0;0;0;0;0;0;1;0;0;0;0;0;0;0;0;Food present
+20;17/03/2017;PG-LO-PA;Eel Ladder;Pumping Station;0,182;0,0064;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;Empty
+21;17/03/2017;PG-LO-PA;Eel Ladder;Pumping Station;0,188;0,0075;0;0;0;0;0;0;0;0;0;1;0;0;0;0;0;0;0;0;Food present
+22;17/03/2017;PG-LO-PA;Eel Ladder;Pumping Station;0,201;0,0055;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;Empty
+23;17/03/2017;PG-RO-SU;Artificial Substrates;Pumping Station;0,191;0,0035;0;0;0;0;0;0;0;0;0;1;0;0;0;0;0;0;0;0;Food present
+24;17/03/2017;PG-RO-SU;Artificial Substrates;Pumping Station;0,135;0,0042;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;Empty
+25;17/03/2017;PG-RO-SU;Artificial Substrates;Pumping Station;0,199;0,005;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;Empty
+26;17/03/2017;PG-RO-SU;Artificial Substrates;Pumping Station;0,265;0,0079;1;0;0;0;0;0;0;1;0;0;0;0;0;0;0;0;0;0;Food present
+27;17/03/2017;PG-RO-SU;Artificial Substrates;Pumping Station;0,158;0,0035;0;0;0;0;0;0;0;0;0;1;0;0;0;0;0;0;0;0;Food present
+28;18/03/2017;PG-KR;Lift Nets;Pumping Station;0,25;0,0069;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;Empty
+29;18/03/2017;PG-KR;Lift Nets;Pumping Station;0,253;0,0052;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;Empty
+30;18/03/2017;PG-KR;Lift Nets;Pumping Station;0,175;0,0038;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;Empty
+31;18/03/2017;PG-KR;Lift Nets;Pumping Station;0,25;0,0059;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;Empty
+32;18/03/2017;PG-KR;Lift Nets;Pumping Station;0,243;;0;0;0;0;0;0;0;0;0;1;0;0;0;0;0;0;0;0;Food present
+33;24/03/2017;PG-RO-PA;Eel Ladder;Pumping Station;0,223;0,008;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;Empty
+34;24/03/2017;PG-RO-PA;Eel Ladder;Pumping Station;0,191;0,0085;0;0;0;1;0;0;0;0;0;0;0;0;0;0;0;0;0;0;Food present
+35;24/03/2017;PG-RO-PA;Eel Ladder;Pumping Station;0,166;0,0076;0;0;0;0;0;0;0;0;0;1;0;0;0;0;0;0;0;0;Food present
+36;24/03/2017;PG-RO-PA;Eel Ladder;Pumping Station;0,061;0,004;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;3;Food present
+37;24/03/2017;PG-RO-PA;Eel Ladder;Pumping Station;0,148;0,0054;0;0;0;0;0;0;0;0;0;2;0;0;0;0;0;0;0;0;Food present
+38;24/03/2017;PG-LO-PA;Eel Ladder;Pumping Station;0,115;0,003;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;Empty
+39;24/03/2017;PG-LO-PA;Eel Ladder;Pumping Station;0,177;0,0103;0;0;0;0;0;0;0;0;0;1;0;0;0;0;0;0;0;0;Food present
+40;24/03/2017;PG-LO-PA;Eel Ladder;Pumping Station;0,203;0,004;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;Empty
+41;24/03/2017;PG-LO-PA;Eel Ladder;Pumping Station;0,248;0,0063;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;Empty
+42;24/03/2017;PG-LO-PA;Eel Ladder;Pumping Station;0,194;0,0079;0;0;0;0;0;0;0;0;0;1;0;0;0;0;0;0;0;0;Food present
+43;24/03/2017;GA-SU;Artificial Substrates;Ganzepoot;0,189;0,0051;0;0;0;0;0;0;0;0;0;1;0;0;0;0;0;0;0;0;Food present
+44;24/03/2017;GA-SU;Artificial Substrates;Ganzepoot;0,106;0,0032;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;Empty
+45;24/03/2017;GA-SU;Artificial Substrates;Ganzepoot;0,216;0,0067;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;Empty
+46;24/03/2017;GA-SU;Artificial Substrates;Ganzepoot;0,254;0,007;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;1;Food present
+47;24/03/2017;GA-SU;Artificial Substrates;Ganzepoot;0,235;0,0065;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;Empty
+48;24/03/2017;PG-RO-SU;Artificial Substrates;Pumping Station;0,175;0,0062;0;0;0;0;0;0;0;0;0;1;0;0;0;0;0;0;0;0;Food present
+49;24/03/2017;PG-RO-SU;Artificial Substrates;Pumping Station;0,188;0,0062;0;0;0;0;0;0;0;0;0;1;0;0;0;0;0;0;0;0;Food present
+50;24/03/2017;PG-RO-SU;Artificial Substrates;Pumping Station;0,186;0,0077;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;Empty
+51;24/03/2017;PG-RO-SU;Artificial Substrates;Pumping Station;0,164;0,0031;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;Empty
+52;24/03/2017;PG-RO-SU;Artificial Substrates;Pumping Station;0,316;0,014;0;0;0;0;0;0;0;0;0;1;0;0;0;0;0;0;0;0;Food present
+53;24/03/2017;PG-LO-SU;Artificial Substrates;Pumping Station;0,194;0,0038;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;Empty
+54;24/03/2017;PG-LO-SU;Artificial Substrates;Pumping Station;0,147;0,0052;0;0;0;0;0;0;0;0;0;1;0;0;0;0;0;0;0;0;Food present
+55;24/03/2017;PG-LO-SU;Artificial Substrates;Pumping Station;0,157;0,0084;0;0;0;0;0;0;0;0;0;1;0;0;0;0;0;0;0;0;Food present
+56;24/03/2017;PG-LO-SU;Artificial Substrates;Pumping Station;0,156;0,0065;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;1;Food present
+57;24/03/2017;PG-LO-SU;Artificial Substrates;Pumping Station;0,045;0,0015;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;Empty
+58;24/03/2017;PG-KR;Lift Nets;Pumping Station;0,263;0,0073;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;Empty
+59;24/03/2017;PG-KR;Lift Nets;Pumping Station;0,215;0,0077;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;1;Food present
+60;24/03/2017;PG-KR;Lift Nets;Pumping Station;0,211;0,211;1;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;Food present
+61;24/03/2017;PG-KR;Lift Nets;Pumping Station;0,101;0,0025;0;0;0;0;0;0;0;0;0;1;0;0;0;0;0;0;0;1;Food present
+62;24/03/2017;PG-KR;Lift Nets;Pumping Station;0,188;0,0071;0;0;0;1;0;0;0;0;0;0;0;0;0;0;0;0;0;0;Food present
+63;31/03/2017;PG-RO-PA;Eel Ladder;Pumping Station;0,158;0,0058;0;0;0;0;0;0;0;0;0;1;0;0;0;0;0;0;0;0;Food present
+64;31/03/2017;PG-RO-PA;Eel Ladder;Pumping Station;0,169;0,008;0;0;0;0;0;0;0;0;0;1;0;0;0;0;0;0;0;0;Food present
+65;31/03/2017;PG-RO-PA;Eel Ladder;Pumping Station;0,2;0,0051;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;Empty
+66;31/03/2017;PG-RO-PA;Eel Ladder;Pumping Station;0,096;0,0015;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;Empty
+67;31/03/2017;PG-RO-PA;Eel Ladder;Pumping Station;0,189;0,0062;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;1;Food present
+68;31/03/2017;PG-LO-PA;Eel Ladder;Pumping Station;0,243;0,0091;0;0;0;0;0;0;0;0;0;1;0;0;0;0;0;0;0;0;Food present
+69;31/03/2017;PG-LO-PA;Eel Ladder;Pumping Station;0,173;0,0069;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;1;Food present
+70;31/03/2017;PG-L0-PA;Eel Ladder;Pumping Station;0,242;0,007;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;Empty
+71;31/03/2017;PG-LO-PA;Eel Ladder;Pumping Station;0,228;0,0064;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;1;Food present
+72;31/03/2017;PG-LO-PA;Eel Ladder;Pumping Station;0,345;0,0095;0;0;0;0;0;0;0;0;0;1;0;0;0;0;0;0;0;0;Food present
+73;31/03/2017;PG-RO-SU;Artificial Substrates;Pumping Station;0,288;0,0137;1;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;Food present
+74;31/03/2017;PG-RO-SU;Artificial Substrates;Pumping Station;0,235;0,006;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;Empty
+75;31/03/2017;PG-RO-SU;Artificial Substrates;Pumping Station;0,221;0,008;0;0;0;0;0;0;0;0;0;1;0;0;0;0;0;0;0;0;Food present
+76;31/03/2017;PG-RO-SU;Artificial Substrates;Pumping Station;0,124;0,003;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;Empty
+77;31/03/2017;PG-RO-SU;Artificial Substrates;Pumping Station;0,193;0,0084;0;0;0;0;0;0;0;0;0;2;0;0;0;0;0;0;0;0;Food present
+78;31/03/2017;PG-LO-SU;Artificial Substrates;Pumping Station;0,201;0,009;0;0;0;0;0;0;0;0;0;1;0;0;0;0;0;0;0;0;Food present
+79;31/03/2017;PG-LO-SU;Artificial Substrates;Pumping Station;0,209;0,0089;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;Empty
+80;31/03/2017;PG-LO-SU;Artificial Substrates;Pumping Station;0,18;0,007;0;0;0;1;0;0;0;0;0;0;0;0;0;0;0;0;0;0;Food present
+81;31/03/2017;PG-LO-SU;Artificial Substrates;Pumping Station;0,19;0,0074;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;Empty
+82;31/03/2017;PG-LO-SU;Artificial Substrates;Pumping Station;0,293;0,0074;0;0;0;0;0;0;0;0;0;1;0;0;0;0;0;0;0;0;Food present
+83;1/04/2017;PG-KR;Lift Nets;Pumping Station;0,148;0,0062;0;0;0;0;0;0;0;0;0;1;0;0;0;0;0;0;0;0;Food present
+84;1/04/2017;PG-KR;Lift Nets;Pumping Station;0,236;0,0085;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;Empty
+85;1/04/2017;PG-KR;Lift Nets;Pumping Station;0,233;0,009;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;1;Food present
+86;1/04/2017;PG-KR;Lift Nets;Pumping Station;0,222;0,0064;0;0;0;0;0;0;0;0;0;1;0;0;0;0;0;0;0;0;Food present
+87;1/04/2017;PG-KR;Lift Nets;Pumping Station;0,243;0,0087;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;Empty
+88;7/04/2017;PG-RO-PA;Eel Ladder;Pumping Station;0,261;0,009;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;Empty
+89;7/04/2017;PG-RO-PA;Eel Ladder;Pumping Station;0,073;0,0019;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;Empty
+90;7/04/2017;PG-RO-PA;Eel Ladder;Pumping Station;0,224;0,0096;0;0;0;0;0;0;0;0;0;2;0;0;0;0;0;0;0;0;Food present
+91;7/04/2017;PG-RO-PA;Eel Ladder;Pumping Station;0,245;0,0107;0;0;0;0;0;0;0;0;0;1;0;0;0;0;0;0;0;0;Food present
+92;7/04/2017;PG-RO-PA;Eel Ladder;Pumping Station;0,176;0,004;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;Empty
+93;7/04/2017;PG-LO-PA;Eel Ladder;Pumping Station;0,136;0,0059;0;0;0;0;0;0;0;0;0;1;0;0;0;0;0;0;0;0;Food present
+94;7/04/2017;PG-LO-PA;Eel Ladder;Pumping Station;0,218;0,0056;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;Empty
+95;7/04/2017;PG-LO-PA;Eel Ladder;Pumping Station;0,231;0,0101;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;Empty
+96;7/04/2017;PG-LO-PA;Eel Ladder;Pumping Station;0,234;0,0104;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;Empty
+97;7/04/2017;PG-LO-PA;Eel Ladder;Pumping Station;0,153;0,0056;0;0;0;0;0;0;0;0;0;1;0;0;0;0;0;0;0;0;Food present
+98;7/04/2017;GA-SU;Artificial Substrates;Ganzepoot;0,163;0,0082;0;0;0;0;0;0;0;0;0;1;0;0;0;0;0;0;0;0;Food present
+99;7/04/2017;GA-SU;Artificial Substrates;Ganzepoot;0,167;0,0102;0;0;0;0;0;0;0;0;0;2;0;0;0;0;0;0;0;0;Food present
+100;7/04/2017;GA-SU;Artificial Substrates;Ganzepoot;0,229;0,007;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;Empty
+101;7/04/2017;GA-SU;Artificial Substrates;Ganzepoot;0,123;0,0049;0;0;0;0;0;0;0;0;0;1;0;0;0;0;0;0;0;0;Food present
+102;7/04/2017;PG-LO-SU;Artificial Substrates;Pumping Station;0,298;0,0113;0;0;0;0;0;0;0;0;0;1;0;0;0;0;0;0;0;0;Food present
+103;7/04/2017;PG-LO-SU;Artificial Substrates;Pumping Station;0,18;0,0051;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;1;Food present
+104;7/04/2017;PG-LO-SU;Artificial Substrates;Pumping Station;0,13;0,0056;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;Empty
+105;7/04/2017;PG-LO-SU;Artificial Substrates;Pumping Station;0,227;0,002;0;0;0;0;0;1;0;0;0;0;0;0;0;0;0;0;0;0;Food present
+106;7/04/2017;PG-LO-SU;Artificial Substrates;Pumping Station;0,108;0,0047;0;0;0;1;0;0;0;0;0;0;0;0;0;0;0;0;0;0;Food present
+107;7/04/2017;PG-RO-SU;Artificial Substrates;Pumping Station;0,224;0,0083;0;0;0;0;0;0;0;0;0;1;0;0;0;0;0;0;0;0;Food present
+108;7/04/2017;PG-RO-SU;Artificial Substrates;Pumping Station;0,194;0,0095;0;0;0;0;0;0;0;0;0;1;0;0;0;0;0;0;0;0;Food present
+109;7/04/2017;PG-RO-SU;Artificial Substrates;Pumping Station;0,133;0,0076;0;0;0;0;0;0;0;1;0;0;0;0;0;0;0;0;0;0;Food present
+110;7/04/2017;PG-RO-SU;Artificial Substrates;Pumping Station;0,21;0,01;0;0;0;0;0;0;0;0;0;1;0;0;0;0;0;0;0;0;Food present
+111;7/04/2017;PG-RO-SU;Artificial Substrates;Pumping Station;0,188;0,0126;0;0;0;0;0;0;0;0;0;1;0;0;0;0;0;0;0;0;Food present
+112;7/04/2017;PG-KR;Lift Nets;Pumping Station;0,274;0,0131;0;0;0;0;0;0;0;0;0;2;0;0;0;0;0;0;0;0;Food present
+113;7/04/2017;PG-KR;Lift Nets;Pumping Station;0,27;0,0068;0;0;0;0;0;0;0;1;0;0;0;0;0;0;0;0;0;0;Food present
+114;7/04/2017;PG-KR;Lift Nets;Pumping Station;0,273;0,0072;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;Empty
+115;7/04/2017;PG-KR;Lift Nets;Pumping Station;0,2;0,0095;1;0;0;0;0;0;0;0;0;2;0;0;0;0;0;0;0;0;Food present
+116;7/04/2017;PG-KR;Lift Nets;Pumping Station;0,178;0,0057;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;Empty
+117;14/04/2017;PG-LO-PA;Eel Ladder;Pumping Station;0,148;0,0053;0;0;0;0;0;0;0;0;0;1;0;0;0;0;0;0;0;0;Food present
+118;14/04/2017;PG-LO-PA;Eel Ladder;Pumping Station;0,175;0,0072;0;0;0;0;0;0;0;0;0;1;0;0;0;0;0;0;0;1;Food present
+119;14/04/2017;PG-LO-PA;Eel Ladder;Pumping Station;0,22;0,0117;0;0;0;0;0;0;0;0;7;1;0;0;2;0;0;0;0;0;Food present
+120;14/04/2017;PG-LO-PA;Eel Ladder;Pumping Station;0,173;0,0096;0;0;0;0;0;0;0;0;0;1;0;0;0;0;0;0;0;1;Food present
+121;14/04/2017;PG-LO-PA;Eel Ladder;Pumping Station;0,196;0,0131;1;0;0;1;0;0;0;0;29;0;0;0;0;1;0;0;0;0;Food present
+122;14/04/2017;PG-RO-PA;Eel Ladder;Pumping Station;0,221;0,0091;0;0;0;0;0;0;0;0;1;0;0;0;1;0;0;0;0;0;Food present
+123;14/04/2017;PG-RO-PA;Eel Ladder;Pumping Station;0,153;0,0046;0;0;0;0;0;0;0;0;0;1;0;0;0;0;0;0;0;0;Food present
+124;14/04/2017;PG-RO-PA;Eel Ladder;Pumping Station;0,212;0,0089;0;0;0;0;0;0;0;0;0;1;0;0;0;0;0;0;0;0;Food present
+125;14/04/2017;PG-RO-PA;Eel Ladder;Pumping Station;0,321;0,0075;0;0;0;0;0;0;0;0;6;0;0;0;0;0;0;0;0;0;Food present
+126;14/04/2017;PG-RO-PA;Eel Ladder;Pumping Station;0,159;0,0073;0;0;0;0;0;0;0;0;19;0;0;0;0;0;1;0;0;0;Food present
+127;14/04/2017;GA-SU;Artificial Substrates;Ganzepoot;0,176;0,005;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;Empty
+128;14/04/2017;GA-SU;Artificial Substrates;Ganzepoot;0,216;0,0088;0;0;0;0;0;0;0;0;0;1;0;0;0;0;0;0;0;0;Food present
+129;14/04/2017;GA-SU;Artificial Substrates;Ganzepoot;0,278;0,0136;0;0;0;0;0;0;0;0;1;1;0;0;0;0;0;0;0;0;Food present
+130;14/04/2017;GA-SU;Artificial Substrates;Ganzepoot;0,117;0,0037;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;Empty
+131;14/04/2017;GA-SU;Artificial Substrates;Ganzepoot;0,169;0,0078;0;0;0;0;0;0;0;0;0;2;0;0;0;0;0;0;0;0;Food present
+132;14/04/2017;SC-RO-SU;Artificial Substrates;Sluice Complex;0,203;0,021;0;0;0;0;0;0;0;0;3;0;0;0;0;0;0;0;0;0;Food present
+133;14/04/2017;PG-RO-SU;Artificial Substrates;Pumping Station;0,172;0,0069;0;0;0;0;0;0;0;0;5;0;0;0;0;0;0;0;0;0;Food present
+134;14/04/2017;PG-RO-SU;Artificial Substrates;Pumping Station;0,155;0,011;0;0;0;1;0;0;0;0;18;0;0;0;0;0;0;0;0;0;Food present
+135;14/04/2017;PG-RO-SU;Artificial Substrates;Pumping Station;0,33;0,0148;1;0;0;0;0;0;0;0;3;1;0;0;0;0;0;0;0;0;Food present
+136;14/04/2017;PG-RO-SU;Artificial Substrates;Pumping Station;0,128;0,0105;0;0;0;0;0;0;0;0;17;0;0;0;0;0;0;0;0;0;Food present
+137;14/04/2017;PG-RO-SU;Artificial Substrates;Pumping Station;0,114;0,0065;0;0;0;0;0;0;0;0;1;0;0;0;0;0;0;0;0;0;Food present
+138;14/04/2017;PG-LO-SU;Artificial Substrates;Pumping Station;0,224;0,0089;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;Empty
+139;14/04/2017;PG-LO-SU;Artificial Substrates;Pumping Station;0,233;0,0093;0;0;0;0;0;0;0;0;0;1;0;0;0;0;0;0;0;0;Food present
+140;14/04/2017;PG-LO-SU;Artificial Substrates;Pumping Station;0,182;0,0094;0;0;0;0;0;0;0;0;0;1;0;0;0;0;0;0;0;0;Food present
+141;14/04/2017;PG-RO-SU;Artificial Substrates;Pumping Station;0,138;0,0093;0;0;0;0;0;0;0;0;0;1;0;0;0;0;0;0;0;0;Food present
+142;15/04/2017;PG-KR;Lift Nets;Pumping Station;0,093;0,0037;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;Empty
+143;15/04/2017;PG-KR;Lift Nets;Pumping Station;0,124;0,0074;1;0;0;0;0;0;0;0;0;1;0;0;0;0;0;0;0;0;Food present
+144;15/04/2017;PG-KR;Lift Nets;Pumping Station;0,198;0,0082;0;0;0;0;0;0;0;0;0;2;0;0;0;0;0;0;0;0;Food present
+145;15/04/2017;PG-KR;Lift Nets;Pumping Station;0,154;0,0044;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;Empty
+146;15/04/2017;PG-KR;Lift Nets;Pumping Station;0,143;0,004;0;0;0;0;0;0;0;0;0;1;0;0;0;0;0;0;0;0;Food present
+147;21/04/2017;PG-LO-PA;Eel Ladder;Pumping Station;0,177;0,0045;0;0;0;0;0;0;0;0;1;1;0;0;0;0;0;0;0;0;Food present
+148;21/04/2017;PG-LO-PA;Eel Ladder;Pumping Station;0,169;0,0057;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;1;Food present
+149;21/04/2017;PG-LO-PA;Eel Ladder;Pumping Station;0,153;0,0071;0;1;0;0;0;0;0;0;13;0;0;0;0;0;0;0;0;0;Food present
+150;21/04/2017;PG-LO-PA;Eel Ladder;Pumping Station;0,138;0,0074;0;0;0;0;0;0;0;0;9;0;0;0;0;0;0;0;0;0;Food present
+151;21/04/2017;PG-LO-PA;Eel Ladder;Pumping Station;0,205;0,0084;1;1;0;0;0;0;0;0;3;1;0;0;0;0;0;0;0;0;Food present
+152;21/04/2017;PG-RO-PA;Eel Ladder;Pumping Station;0,112;0,0089;0;0;0;0;0;0;0;0;8;0;0;0;0;0;0;0;0;0;Food present
+153;21/04/2017;PG-RO-PA;Eel Ladder;Pumping Station;0,184;0,0078;2;0;0;0;0;0;1;0;1;0;0;0;0;0;0;0;0;0;Food present
+154;21/04/2017;PG-RO-PA;Eel Ladder;Pumping Station;0,119;0,008;0;1;0;0;0;0;0;0;10;1;0;0;0;0;0;0;0;0;Food present
+155;21/04/2017;PG-RO-PA;Eel Ladder;Pumping Station;0,118;0,006;0;0;0;0;0;0;0;2;7;0;0;0;0;0;0;0;0;0;Food present
+156;21/04/2017;PG-RO-PA;Eel Ladder;Pumping Station;0,15;0,0075;0;1;0;1;0;0;0;0;45;0;0;0;0;0;0;0;0;0;Food present
+157;21/04/2017;PG-LO-SU;Artificial Substrates;Pumping Station;0,157;0,0107;0;0;0;0;0;0;0;0;10;1;0;0;0;0;0;0;0;0;Food present
+158;21/04/2017;PG-LO-SU;Artificial Substrates;Pumping Station;;0,0108;0;0;0;0;0;0;0;0;2;2;0;0;0;0;0;0;0;0;Food present
+159;21/04/2017;PG-LO-SU;Artificial Substrates;Pumping Station;0,179;0,008;0;0;0;0;0;0;0;0;0;1;0;0;0;0;0;0;0;0;Food present
+160;21/04/2017;PG-LO-SU;Artificial Substrates;Pumping Station;0,124;0,0054;0;0;0;1;0;0;0;0;3;0;0;0;0;0;0;0;0;0;Food present
+161;21/04/2017;PG-LO-SU;Artificial Substrates;Pumping Station;0,158;0,0051;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;Empty
+162;21/04/2017;GA-SU;Artificial Substrates;Ganzepoot;0,123;0,0085;0;0;0;2;0;0;0;0;0;0;0;0;0;0;0;0;0;0;Food present
+163;21/04/2017;GA-SU;Artificial Substrates;Ganzepoot;0,079;0,0055;0;0;0;1;0;0;0;0;0;0;0;0;0;0;0;0;0;0;Food present
+164;21/04/2017;GA-SU;Artificial Substrates;Ganzepoot;0,153;0,0042;0;0;0;0;0;0;0;0;0;1;0;0;0;0;0;0;0;0;Food present
+165;21/04/2017;GA-SU;Artificial Substrates;Ganzepoot;0,14;0,0085;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;Empty
+166;21/04/2017;GA-SU;Artificial Substrates;Ganzepoot;0,172;0,0064;0;0;0;0;0;0;0;0;0;1;0;0;0;0;0;0;0;0;Food present
+167;21/04/2017;MI-RO-SU;Artificial Substrates;Middle Veurne-Ambacht;0,135;0,0056;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;Empty
+168;21/04/2017;MI-RO-SU;Artificial Substrates;Middle Veurne-Ambacht;0,189;0,0138;1;0;0;2;0;0;0;0;5;0;0;0;4;1;0;0;0;0;Food present
+169;21/04/2017;MI-RO-SU;Artificial Substrates;Middle Veurne-Ambacht;0,282;0,0182;0;0;0;1;0;0;0;0;40;0;0;0;0;0;0;0;0;0;Food present
+170;21/04/2017;MI-RO-SU;Artificial Substrates;Middle Veurne-Ambacht;0,156;0,01;0;0;0;0;0;0;0;0;0;0;3;3;0;0;0;0;0;0;Food present
+171;21/04/2017;MI-RO-SU;Artificial Substrates;Middle Veurne-Ambacht;0,173;0,0126;0;0;0;1;0;0;0;0;0;1;10;0;2;3;0;0;0;0;Food present
+172;22/04/2017;PG-KR;Lift Nets;Pumping Station;0,201;0,0074;2;0;0;1;0;0;0;0;0;1;0;0;0;4;0;0;0;0;Food present
+173;22/04/2017;PG-KR;Lift Nets;Pumping Station;0,253;0,0143;0;0;0;0;0;0;0;0;0;2;0;0;0;0;0;0;0;0;Food present
+174;22/04/2017;PG-KR;Lift Nets;Pumping Station;0,266;0,0187;0;0;0;1;0;0;0;0;2;2;0;0;0;0;0;0;0;0;Food present
+175;22/04/2017;PG-KR;Lift Nets;Pumping Station;0,205;0,0136;0;0;0;0;0;0;0;0;2;1;0;0;0;2;0;0;0;0;Food present
+176;28/04/2017;PG-RO-PA;Eel Ladder;Pumping Station;0,248;0,02;0;5;0;0;0;0;0;0;39;0;0;0;0;0;0;0;0;0;Food present
+177;28/04/2017;PG-RO-PA;Eel Ladder;Pumping Station;0,193;0,0119;0;3;0;0;0;0;0;0;18;0;0;0;0;0;0;0;0;0;Food present
+178;28/04/2017;PG-RO-PA;Eel Ladder;Pumping Station;0,247;0,0121;0;0;0;0;0;0;0;0;21;0;0;0;0;0;0;0;0;0;Food present
+179;28/04/2017;PG-RO-PA;Eel Ladder;Pumping Station;0,301;0,0184;0;0;0;0;0;0;0;0;17;0;0;0;0;0;0;0;0;0;Food present
+180;28/04/2017;PG-RO-PA;Eel Ladder;Pumping Station;0,228;0,0137;0;0;0;0;0;0;0;0;27;0;0;0;0;0;0;0;0;0;Food present
+181;28/04/2017;PG-LO-PA;Eel Ladder;Pumping Station;0,193;0,018;0;0;0;0;0;0;0;0;0;1;0;0;0;0;0;0;0;0;Food present
+182;28/04/2017;PG-LO-PA;Eel Ladder;Pumping Station;0,19;0,012;2;0;0;0;0;0;0;0;0;0;0;1;0;0;0;0;1;1;Food present
+183;28/04/2017;PG-LO-PA;Eel Ladder;Pumping Station;0,177;0,0096;0;0;0;0;0;0;0;0;2;1;0;0;0;0;0;0;0;0;Food present
+184;28/04/2017;PG-LO-PA;Eel Ladder;Pumping Station;0,215;0,0166;2;0;0;0;0;0;0;0;17;2;0;0;1;0;0;0;0;0;Food present
+185;28/04/2017;PG-LO-PA;Eel Ladder;Pumping Station;0,245;0,019;0;0;0;0;0;0;0;0;60;1;0;0;1;0;0;0;0;0;Food present
+186;28/04/2017;PG-RO-SU;Artificial Substrates;Pumping Station;0,201;0,0141;1;0;0;0;0;0;0;0;69;2;0;0;0;0;0;0;0;0;Food present
+187;28/04/2017;PG-RO-SU;Artificial Substrates;Pumping Station;0,212;0,0181;1;0;0;1;0;0;0;0;56;0;0;0;7;0;0;0;0;0;Food present
+188;28/04/2017;PG-RO-SU;Artificial Substrates;Pumping Station;0,123;0,0076;0;2;0;1;0;0;0;0;34;0;0;0;0;1;0;0;0;0;Food present
+189;28/04/2017;PG-RO-SU;Artificial Substrates;Pumping Station;0,269;0,0148;0;0;0;0;0;0;0;0;2;1;0;0;0;0;0;0;0;0;Food present
+190;28/04/2017;PG-RO-SU;Artificial Substrates;Pumping Station;0,197;0,0091;0;0;0;0;0;0;0;0;0;1;0;0;0;0;0;0;0;0;Food present
+191;28/04/2017;PG-LO-SU;Artificial Substrates;Pumping Station;0,135;0,0177;0;3;0;2;0;0;0;0;148;1;0;0;0;0;0;0;0;0;Food present
+192;28/04/2017;PG-LO-SU;Artificial Substrates;Pumping Station;0,17;0,019;1;12;0;0;0;0;0;0;4;0;0;2;64;0;0;0;0;0;Food present
+193;28/04/2017;PG-LO-SU;Artificial Substrates;Pumping Station;0,147;0,001;1;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;Food present
+194;28/04/2017;PG-LO-SU;Artificial Substrates;Pumping Station;0,2;0,0152;1;0;0;1;0;0;0;0;65;0;0;0;1;0;0;0;0;0;Food present
+195;28/04/2017;PG-LO-SU;Artificial Substrates;Pumping Station;0,214;0,0252;1;0;0;1;0;0;0;0;124;0;0;0;6;0;0;0;0;0;Food present
+196;5/05/2017;PG-LO-PA;Eel Ladder;Pumping Station;0,155;0,0091;0;0;0;1;0;0;0;0;4;2;0;0;0;0;0;0;0;0;Food present
+197;5/05/2017;PG-LO-PA;Eel Ladder;Pumping Station;0,192;0,0152;0;0;0;0;0;0;0;0;0;2;0;0;0;0;0;0;0;0;Food present
+198;5/05/2017;PG-LO-PA;Eel Ladder;Pumping Station;0,202;0,0147;0;0;0;1;0;0;0;0;10;3;0;0;0;0;0;0;0;0;Food present
+199;5/05/2017;PG-LO-PA;Eel Ladder;Pumping Station;0,154;0,0036;0;0;0;0;0;0;0;0;0;1;0;0;0;0;0;0;0;0;Food present
+200;5/05/2017;PG-LO-PA;Eel Ladder;Pumping Station;0,094;0,0084;0;2;0;1;0;0;0;0;10;0;0;0;1;0;0;0;0;0;Food present
+201;5/05/2017;PG-RO-PA;Eel Ladder;Pumping Station;0,187;0,0099;0;1;0;0;0;0;0;0;2;1;0;0;0;0;0;0;0;0;Food present
+202;5/05/2017;PG-RO-PA;Eel Ladder;Pumping Station;0,177;0,0152;0;0;0;1;0;0;0;0;12;1;0;0;0;2;0;0;0;0;Food present
+203;5/05/2017;PG-RO-PA;Eel Ladder;Pumping Station;0,178;0,009;0;1;0;0;0;0;0;0;3;0;0;0;15;0;0;0;0;4;Food present
+204;5/05/2017;PG-RO-PA;Eel Ladder;Pumping Station;0,277;0,0168;1;0;0;1;0;0;0;0;40;1;0;0;0;0;0;0;0;0;Food present
+205;5/05/2017;PG-RO-PA;Eel Ladder;Pumping Station;0,231;0,0078;0;0;0;1;0;0;0;0;2;0;0;0;0;0;0;0;0;0;Food present
+206;5/05/2017;SC-RO-SU;Artificial Substrates;Sluice Complex;0,206;0,0142;0;0;0;0;0;0;1;0;2;0;0;0;0;1;0;1;0;0;Food present
+207;5/05/2017;SC-RO-SU;Artificial Substrates;Sluice Complex;0,171;0,0106;0;0;0;1;0;0;0;0;8;0;0;0;0;0;0;0;0;0;Food present
+208;5/05/2017;SC-RO-SU;Artificial Substrates;Sluice Complex;0,143;0,0182;0;0;0;0;0;0;0;0;5;2;0;0;0;1;0;0;0;0;Food present
+209;5/05/2017;SC-RO-SU;Artificial Substrates;Sluice Complex;0,151;;0;1;0;1;0;0;0;0;0;0;0;0;0;3;0;0;0;0;Food present
+210;5/05/2017;SC-RO-SU;Artificial Substrates;Sluice Complex;0,202;0,0174;0;0;0;1;0;1;0;0;35;1;0;0;0;2;0;0;0;0;Food present
+211;5/05/2017;MI-RO-SU;Artificial Substrates;Middle Veurne-Ambacht;0,119;0,0159;0;0;0;1;0;0;0;0;7;0;0;0;0;0;0;0;0;0;Food present
+212;5/05/2017;MI-RO-SU;Artificial Substrates;Middle Veurne-Ambacht;0,209;0,0142;0;0;0;1;0;0;0;0;9;0;0;0;0;1;0;0;0;0;Food present
+213;5/05/2017;MI-RO-SU;Artificial Substrates;Middle Veurne-Ambacht;0,124;0,0145;1;0;0;1;0;0;0;0;1;1;0;0;0;1;0;0;0;0;Food present
+214;5/05/2017;MI-RO-SU;Artificial Substrates;Middle Veurne-Ambacht;0,19;0,0166;0;1;0;1;0;0;1;0;9;0;0;0;0;3;0;0;0;0;Food present
+215;5/05/2017;MI-RO-SU;Artificial Substrates;Middle Veurne-Ambacht;0,211;0,013;0;0;0;1;0;0;0;0;0;0;0;0;0;0;0;0;0;0;Food present
+216;12/05/2017;PG-RO-PA;Eel Ladder;Pumping Station;0,144;0,0137;0;4;0;0;0;0;0;0;9;0;0;0;0;0;0;0;0;0;Food present
+217;12/05/2017;PG-RO-PA;Eel Ladder;Pumping Station;0,173;0,01;0;4;0;0;0;0;0;0;3;3;0;0;0;0;0;0;0;0;Food present
+218;12/05/2017;PG-RO-PA;Eel Ladder;Pumping Station;0,126;0,0135;1;6;0;0;0;0;0;0;2;2;0;0;0;0;0;0;0;0;Food present
+219;12/05/2017;PG-RO-PA;Eel Ladder;Pumping Station;0,227;0,006;0;1;1;0;1;0;0;0;0;0;0;0;0;0;0;0;0;0;Food present
+220;12/05/2017;PG-R0-PA;Eel Ladder;Pumping Station;0,319;0,0145;0;3;0;1;0;0;0;0;0;0;0;0;1;0;0;0;0;0;Food present
+221;12/05/2017;SC-RO-SU;Artificial Substrates;Sluice Complex;0,232;0,0174;0;0;0;1;0;0;0;0;0;0;0;0;0;0;0;0;0;0;Food present
+222;12/05/2017;SC-RO-SU;Artificial Substrates;Sluice Complex;0,244;0,0226;0;0;0;2;0;0;0;0;0;0;0;0;0;1;0;0;0;0;Food present
+223;12/05/2017;SC-RO-SU;Artificial Substrates;Sluice Complex;0,279;0,0229;0;0;0;1;0;0;1;0;26;1;0;0;0;2;0;0;0;0;Food present
+224;12/05/2017;SC-RO-SU;Artificial Substrates;Sluice Complex;0,163;0,0231;0;0;0;2;0;0;0;0;0;0;0;0;2;2;0;0;0;0;Food present
+225;12/05/2017;SC-RO-SU;Artificial Substrates;Sluice Complex;0,215;0,0225;0;0;0;1;0;0;0;0;0;1;0;0;0;5;0;0;0;0;Food present
+226;12/05/2017;MI-RO-SU;Artificial Substrates;Middle Veurne-Ambacht;0,205;0,0316;0;0;0;2;0;0;0;0;0;0;0;0;0;0;0;0;0;0;Food present
+227;12/05/2017;MI-RO-SU;Artificial Substrates;Middle Veurne-Ambacht;0,266;0,0231;0;0;0;0;0;0;1;0;8;3;0;0;0;6;0;0;0;0;Food present
+228;12/05/2017;MI-RO-SU;Artificial Substrates;Middle Veurne-Ambacht;0,294;0,021;0;0;0;1;0;0;0;0;0;0;0;0;0;0;0;0;0;0;Food present
+229;12/05/2017;MI-RO-SU;Artificial Substrates;Middle Veurne-Ambacht;0,221;0,026;0;0;0;1;0;0;0;0;1;0;1;0;0;1;0;0;0;0;Food present
+230;12/05/2017;MI-RO-SU;Artificial Substrates;Middle Veurne-Ambacht;0,208;0,0191;1;0;0;0;0;0;0;0;6;1;0;0;0;0;0;0;0;0;Food present
+231;12/05/2017;PG-LO-PA;Eel Ladder;Pumping Station;0,192;0,011;0;0;0;0;0;0;0;0;5;2;0;0;0;0;0;0;0;0;Food present
+232;12/05/2017;PG-LO-PA;Eel Ladder;Pumping Station;0,229;0,0202;0;0;0;0;0;0;0;0;9;2;0;0;2;0;0;0;0;0;Food present
+233;12/05/2017;PG-LO-PA;Eel Ladder;Pumping Station;;0,0119;0;1;0;1;0;0;0;0;4;1;0;0;0;0;0;0;0;0;Food present
+234;12/05/2017;PG-LO-PA;Eel Ladder;Pumping Station;0,205;0,014;0;0;0;0;0;0;0;0;6;0;0;2;9;0;0;0;0;0;Food present
+235;12/05/2017;PG-LO-PA;Eel Ladder;Pumping Station;0,202;0,0142;0;1;0;1;0;0;1;0;0;1;0;0;0;2;0;0;0;0;Food present
+236;12/05/2017;PG-RO-PA;Eel Ladder;Pumping Station;0,203;0,0185;0;3;0;2;0;0;0;0;21;0;0;0;0;0;0;0;0;0;Food present
+237;19/05/2017;PG-RO-PA;Eel Ladder;Pumping Station;0,232;0,0172;0;1;0;1;0;0;0;0;1;2;1;0;1;0;0;0;0;0;Food present
+238;19/05/2017;PG-RO-PA;Eel Ladder;Pumping Station;0,27;0,0185;0;18;0;0;0;0;0;0;11;1;0;0;0;0;0;0;0;0;Food present
+239;19/05/2017;PG-RO-PA;Eel Ladder;Pumping Station;0,257;0,0138;1;2;0;1;0;0;0;0;6;1;0;0;0;0;0;0;0;0;Food present
+240;19/05/2017;PG-RO-PA;Eel Ladder;Pumping Station;0,154;0,0131;0;2;0;1;0;0;0;0;16;1;0;0;0;0;0;0;0;0;Food present
+241;19/05/2017;PG-LO-PA;Eel Ladder;Pumping Station;0,161;0,0123;1;1;0;2;0;0;0;0;1;0;0;0;3;0;1;0;0;0;Food present
+242;19/05/2017;PG-LO-PA;Eel Ladder;Pumping Station;0,2;0,009;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;Empty
+243;19/05/2017;PG-LO-PA;Eel Ladder;Pumping Station;0,13;0,01;0;0;0;0;0;0;0;0;0;1;0;0;0;0;0;0;0;0;Food present
+244;19/05/2017;PG-LO-PA;Eel Ladder;Pumping Station;0,231;0,0132;0;0;0;0;0;0;0;0;1;3;0;0;0;0;0;0;0;0;Food present
+245;19/05/2017;PG-LO-PA;Eel Ladder;Pumping Station;0,169;0,0133;0;1;0;1;0;0;1;0;13;0;0;0;0;0;0;0;0;0;Food present
+246;19/05/2017;SC-LO-SU;Artificial Substrates;Sluice Complex;0,37;0,0343;0;0;0;1;0;0;0;0;1;0;0;0;0;1;0;0;0;0;Food present
+247;19/05/2017;SC-LO-SU;Artificial Substrates;Sluice Complex;0,419;0,0499;0;0;0;2;0;0;1;0;0;0;1;0;0;1;0;0;0;0;Food present
+248;19/05/2017;SC-LO-SU;Artificial Substrates;Sluice Complex;0,259;0,0297;0;0;0;1;0;0;1;0;1;0;4;0;0;2;0;0;0;0;Food present
+249;19/05/2017;SC-LO-SU;Artificial Substrates;Sluice Complex;0,254;0,032;1;0;0;4;0;0;0;0;3;14;1;0;0;8;0;0;0;0;Food present
+250;19/05/2017;SC-LO-SU;Artificial Substrates;Sluice Complex;0,304;0,0379;0;0;0;2;0;0;0;0;0;0;1;0;0;3;0;0;0;0;Food present
+251;19/05/2017;MI-RO-SU;Artificial Substrates;Middle Veurne-Ambacht;0,256;0,0284;2;0;0;2;0;0;0;0;0;0;0;0;0;0;0;0;0;0;Food present
+252;19/05/2017;MI-RO-SU;Artificial Substrates;Middle Veurne-Ambacht;0,218;0,0241;0;0;0;0;0;0;0;0;0;2;0;0;0;0;0;0;0;0;Food present
+253;19/05/2017;MI-RO-SU;Artificial Substrates;Middle Veurne-Ambacht;0,293;0,0325;0;0;0;2;0;0;0;0;0;1;0;0;0;0;0;0;0;0;Food present
+254;19/05/2017;MI-RO-SU;Artificial Substrates;Middle Veurne-Ambacht;0,303;0,0389;0;0;0;1;0;0;0;0;0;0;1;0;0;6;0;0;0;0;Food present
+255;19/05/2017;MI-RO-SU;Artificial Substrates;Middle Veurne-Ambacht;0,402;0,0285;1;0;0;1;0;0;1;0;0;0;2;0;0;0;0;0;0;0;Food present
+256;24/05/2017;PG-LO-PA;Eel Ladder;Pumping Station;0,201;0,0164;0;0;0;1;0;0;0;0;0;0;0;0;0;1;0;0;0;0;Food present
+257;24/05/2017;PG-LO-PA;Eel Ladder;Pumping Station;0,208;0,0136;0;0;0;1;0;0;0;0;1;0;0;0;0;0;0;0;0;0;Food present
+258;24/05/2017;PG-LO-PA;Eel Ladder;Pumping Station;0,259;0,0164;0;4;0;2;0;1;0;0;4;1;0;0;1;0;0;0;0;0;Food present
+259;24/05/2017;PG-LO-PA;Eel Ladder;Pumping Station;0,202;0,022;0;8;0;1;0;0;0;0;0;1;0;0;0;0;0;0;0;0;Food present
+260;24/05/2017;PG-LI-PA;Eel Ladder;Pumping Station;0,201;0,0127;0;0;0;0;0;0;0;0;3;1;11;0;0;0;0;0;0;0;Food present
+261;24/05/2017;PG-RO-PA;Eel Ladder;Pumping Station;0,148;0,0113;0;4;0;1;0;0;0;0;28;2;0;0;0;0;0;0;0;0;Food present
+262;24/05/2017;PG-RO-PA;Eel Ladder;Pumping Station;0,124;0,0086;0;21;0;0;0;0;0;0;1;0;0;0;0;0;0;0;0;0;Food present
+263;24/05/2017;PG-RO-PA;Eel Ladder;Pumping Station;0,196;0,015;0;2;0;1;0;0;0;0;5;0;0;0;0;0;0;0;0;0;Food present
+264;24/05/2017;PG-RO-PA;Eel Ladder;Pumping Station;0,144;0,0125;0;17;0;1;0;0;0;0;2;0;0;0;0;0;0;0;0;0;Food present
+265;24/05/2017;PG-RO-PA;Eel Ladder;Pumping Station;0,191;0,0087;0;0;0;1;0;0;0;0;8;0;0;0;0;0;0;0;0;0;Food present
+266;24/05/2017;PG-LO-SU;Artificial Substrates;Pumping Station;0,299;0,0305;0;0;0;1;0;0;0;0;6;0;2;0;0;41;0;0;0;1;Food present
+267;24/05/2017;PG-LO-SU;Artificial Substrates;Pumping Station;0,234;0,0229;1;13;0;4;0;0;0;0;52;2;1;0;12;13;0;0;0;0;Food present
+268;24/05/2017;PG-LO-SU;Artificial Substrates;Pumping Station;0,159;0,0153;2;0;0;0;0;0;0;0;4;1;0;0;0;30;0;0;0;0;Food present
+269;24/05/2017;PG-LO-SU;Artificial Substrates;Pumping Station;0,274;0,022;0;0;0;1;0;0;1;1;0;0;0;0;0;0;0;0;0;0;Food present
+271;24/05/2017;PG-LO-SU;Artificial Substrates;Pumping Station;0,256;0,031;1;0;0;1;0;0;0;0;0;1;0;0;0;1;0;0;0;0;Food present
+271;24/05/2017;MI-RO-SU;Artificial Substrates;Middle Veurne-Ambacht;0,336;0,0417;0;0;0;1;0;0;0;0;0;2;0;0;7;31;0;0;0;0;Food present
+272;24/05/2017;MI-RO-SU;Artificial Substrates;Middle Veurne-Ambacht;0,238;0,028;0;1;0;1;0;0;0;0;7;2;0;0;0;2;0;0;0;0;Food present
+273;24/05/2017;MI-RO-SU;Artificial Substrates;Middle Veurne-Ambacht;0,219;0,0257;1;0;0;1;0;0;0;0;2;1;2;0;0;126;0;0;0;0;Food present
+274;24/05/2017;MI-RO-SU;Artificial Substrates;Middle Veurne-Ambacht;0,268;0,026;2;0;0;1;0;0;0;0;1;0;0;0;0;6;0;0;0;0;Food present
+275;24/05/2017;MI-RO-SU;Artificial Substrates;Middle Veurne-Ambacht;0,311;0,0334;0;0;0;1;1;0;0;0;0;1;0;0;0;15;0;0;0;0;Food present
+276;24/05/2017;SC-RO-SU;Artificial Substrates;Sluice Complex;0,42;0,0453;0;0;0;3;0;0;0;0;0;0;2;0;0;5;0;0;0;0;Food present
