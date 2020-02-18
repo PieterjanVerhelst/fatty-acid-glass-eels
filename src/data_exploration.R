@@ -1102,4 +1102,9 @@ avg_FA_ <- fa_rel_no_kn %>%
             avg_17.1.16.2 = mean(X17.1.16.2),
             avg_18.0 = mean(X18.0))
 
+# Obtain SD values
+
+fa_rel_no_kn %>%
+  group_by(Fishing_method) %>%
+  select()
 
